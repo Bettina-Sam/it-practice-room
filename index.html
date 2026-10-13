@@ -850,7 +850,7 @@ function vResult(){
 function render(){
   document.documentElement.style.setProperty("--accent",VOICE.accent);
   const v={pick:vPick,home:vHome,setup:vSetup,exam:vExam,result:vResult}[S.screen]();
-  $app.innerHTML=vHeader()+v+(S.screen!=="exam"?`<footer class="foot"><figure class="hodnote"><blockquote>Keep learning, keep growing. Your IT family is with you every step of the way 💙</blockquote><figcaption><b>Head of the Department</b><span>Department of Information Technology, FXEC</span></figcaption></figure><p class="small">${esc(VOICE.footQuips[Math.floor(Date.now()/864e5)%VOICE.footQuips.length])}<br>Questions from the NPTEL assignments, July to October 2026.</p></footer>`:"")+(S.confirm&&S.exam?vConfirm():"");
+  $app.innerHTML=vHeader()+v+(S.screen!=="exam"?`<footer class="foot"><figure class="hodnote"><blockquote>Keep learning, keep growing. Your IT family is with you every step of the way 💙</blockquote><figcaption><b>Head of the Department </b><span>Department of Information Technology, FXEC</span></figcaption></figure><p class="small">${esc(VOICE.footQuips[Math.floor(Date.now()/864e5)%VOICE.footQuips.length])}<br>Questions from the NPTEL assignments, July to October 2026.</p></footer>`:"")+(S.confirm&&S.exam?vConfirm():"");
 }
 
 /* ---------- exam engine ---------- */
