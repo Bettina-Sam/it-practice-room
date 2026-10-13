@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b2340">
+<title>IIoT Practice Room, Department of IT, FXEC</title>
+<meta name="description" content="Free practice tests for NPTEL Introduction to Industry 4.0 and IIoT, from the Department of Information Technology, FXEC.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%232f6fe0%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238b6fd6%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22116%22%20fill%3D%22url%28%23g%29%22/%3E%0A%3Cg%20transform%3D%22translate%28256%20256%29%20scale%281%29%20translate%28-256%20-256%29%22%3E%0A%20%3Cg%20fill%3D%22%23ffffff%22%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%280%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%2845%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%2890%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%28135%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%28180%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%28225%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%28270%20256%20256%29%22/%3E%3Crect%20x%3D%22221%22%20y%3D%2288%22%20width%3D%2270%22%20height%3D%2260%22%20rx%3D%2214%22%20transform%3D%22rotate%28315%20256%20256%29%22/%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%22140%22/%3E%3C/g%3E%0A%20%3Ccircle%20cx%3D%22208%22%20cy%3D%22246%22%20r%3D%2217%22%20fill%3D%22%231b2340%22/%3E%3Ccircle%20cx%3D%22304%22%20cy%3D%22246%22%20r%3D%2217%22%20fill%3D%22%231b2340%22/%3E%0A%20%3Ccircle%20cx%3D%22214%22%20cy%3D%22240%22%20r%3D%226%22%20fill%3D%22%23fff%22/%3E%3Ccircle%20cx%3D%22310%22%20cy%3D%22240%22%20r%3D%226%22%20fill%3D%22%23fff%22/%3E%0A%20%3Cellipse%20cx%3D%22180%22%20cy%3D%22290%22%20rx%3D%2220%22%20ry%3D%2212%22%20fill%3D%22%23ff8fb3%22%20opacity%3D%22.75%22/%3E%3Cellipse%20cx%3D%22332%22%20cy%3D%22290%22%20rx%3D%2220%22%20ry%3D%2212%22%20fill%3D%22%23ff8fb3%22%20opacity%3D%22.75%22/%3E%0A%20%3Cpath%20d%3D%22M232%20292%20q24%2026%2048%200%22%20fill%3D%22none%22%20stroke%3D%22%231b2340%22%20stroke-width%3D%2211%22%20stroke-linecap%3D%22round%22/%3E%0A%20%3Cpath%20d%3D%22M392%20128c-14-10-22-17-22-27a12%2012%200%200%201%2022-6%2012%2012%200%200%201%2022%206c0%2010-8%2017-22%2027z%22%20fill%3D%22%23ff5c93%22%20stroke%3D%22%23fff%22%20stroke-width%3D%225%22%20transform%3D%22translate%286%20-14%29%20scale%281.5%29%20translate%28-130%20-40%29%22/%3E%0A%3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="IIoT Practice">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eceff5; --panel:#ffffff; --panel2:#f4f6fa; --ink:#1b2340; --muted:#5a6381; --line:#d6dbe7;
+  --band:#1b2340; --bandInk:#f3f5fb;
+  --ok:#21804f; --okBg:#e2f3e9; --bad:#bf3527; --badBg:#fbe5e2; --mark:#d07a1f; --warn:#9a6411; --warnBg:#fcf1d8;
+  --accent:#3d4a7a;
+  --soft:color-mix(in srgb, var(--accent) 12%, var(--panel));
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root[data-theme="dark"]{
+  --bg:#22293f; --panel:#2c3450; --panel2:#272f49; --ink:#eef0f8; --muted:#b8bfd6; --line:#424c6e;
+  --band:#1a2033; --ok:#52c98d; --okBg:#163828; --bad:#f2786b; --badBg:#41201c; --mark:#f0a24a; --warn:#e9b451; --warnBg:#3a2e15;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{cursor:not-allowed}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;letter-spacing:-.01em}
+
+/* top band */
+.band{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--band);color:var(--bandInk);border-bottom:4px solid var(--accent)}
+.band-in{max-width:1120px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:12px}
+.logo{width:36px;height:36px;flex:none}
+.brand{display:flex;flex-direction:column;line-height:1.15}
+.brand b{font-family:var(--display);font-size:17px}
+.brand span{font-size:12.5px;opacity:.75}
+.brand{margin-right:auto}
+.crumb{margin-right:4px;font-size:14px;opacity:.85;text-align:right}
+.switch{background:transparent;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 12px;font-size:13.5px;color:var(--bandInk)}
+.switch:hover{background:rgba(255,255,255,.1)}
+
+.wrap{max-width:1120px;margin:0 auto;padding:22px 18px 48px}
+.btn{border:0;border-radius:10px;padding:11px 18px;font-weight:700;background:var(--panel2);border:1px solid var(--line)}
+.btn:hover{filter:brightness(.97)}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent}
+.btn.light{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.3)}
+.btn:disabled{opacity:.45}
+.link{background:none;border:0;padding:0;color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+
+/* picker */
+.pick-head{text-align:center;margin:26px auto 28px;max-width:640px}
+.pick-head h1{font-size:clamp(34px,7vw,60px);font-weight:800}
+.pick-head p{margin:12px 0 0;color:var(--muted);font-size:17px}
+.badges{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+.badge{--c:#2563c9;position:relative;width:min(300px,100%);text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:0 0 20px;overflow:hidden;box-shadow:0 18px 40px -24px rgba(20,25,50,.5);transition:transform .25s ease}
+.badge:hover{transform:translateY(-4px) rotate(-1deg)}
+.badge:nth-child(2):hover{transform:translateY(-4px) rotate(1deg)}
+.badge .top{display:block;background:var(--c);height:92px;position:relative}
+.badge .slot{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:62px;height:12px;border-radius:8px;background:var(--panel);opacity:.9}
+.badge .avatar{position:absolute;left:22px;bottom:-34px;width:76px;height:76px;border-radius:20px;background:var(--panel);border:4px solid var(--panel);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:40px;color:var(--c);box-shadow:0 6px 14px -8px rgba(0,0,0,.4)}
+.badge .bid{position:absolute;right:16px;bottom:10px;color:#fff;font-size:13px;opacity:.9;font-variant-numeric:tabular-nums}
+.badge .body{display:block;padding:46px 22px 0}
+.badge .bname{font-family:var(--display);font-size:32px;font-weight:800;display:block}
+.badge .brole{display:block;color:var(--muted);font-size:15px;margin-top:2px}
+.badge .bstat{display:block;margin-top:14px;font-size:14px;padding:8px 10px;border-radius:10px;background:color-mix(in srgb,var(--c) 12%,var(--panel))}
+.badge .bgo{display:block;margin-top:16px;font-weight:700;color:var(--c)}
+.pick-foot{text-align:center;margin-top:34px;color:var(--muted);font-size:14px}
+
+/* home */
+.hero{position:relative;overflow:hidden;border-radius:22px;background:var(--accent);color:#fff;padding:34px clamp(20px,4vw,44px) 36px}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:300px;height:300px;border-radius:50%;border:40px solid rgba(255,255,255,.08)}
+.hero::before{content:"";position:absolute;right:120px;bottom:-110px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.06)}
+.hero .hello{margin:0 0 6px;font-size:16px;opacity:.9}
+.hero h1{font-size:clamp(34px,6vw,54px);font-weight:800;max-width:16ch}
+.hero .line{margin:14px 0 0;max-width:52ch;font-size:18px;position:relative;z-index:1}
+.hero .actions{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
+.lastbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding:14px 18px;border-radius:14px;background:var(--panel);border:1px solid var(--line)}
+.grid2{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;margin-top:22px}
+@media (max-width:820px){.grid2{grid-template-columns:1fr}}
+.sec-title{font-size:21px;margin:0 0 12px}
+.course{display:flex;gap:16px;align-items:flex-start;border-left:5px solid var(--accent)}
+.course .ico{width:46px;height:46px;border-radius:12px;background:var(--soft);display:grid;place-items:center;flex:none}
+.course h3{font-size:20px}
+.course p{margin:6px 0 12px;color:var(--muted);font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--panel2);border-radius:12px;padding:12px}
+.stat b{display:block;font-family:var(--display);font-size:28px}
+.stat span{font-size:13.5px;color:var(--muted)}
+.suggest{margin-top:12px;padding:14px;border-radius:12px;background:var(--warnBg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent)}
+.suggest p{margin:4px 0 10px;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:700;font-size:13.5px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12.5px;font-weight:700}
+.pill.ok{background:var(--okBg);color:var(--ok)}
+.pill.mid{background:var(--warnBg);color:var(--warn)}
+.pill.bad{background:var(--badBg);color:var(--bad)}
+
+/* setup */
+.setup-grid{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
+@media (max-width:860px){.setup-grid{grid-template-columns:1fr}}
+.page-title{font-size:clamp(28px,5vw,40px);font-weight:800}
+.page-sub{margin:6px 0 20px;color:var(--muted)}
+.step{margin-bottom:22px}
+.step h2{font-size:18px;margin-bottom:10px}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.choices.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:600px){.choices,.choices.two{grid-template-columns:1fr}}
+.choice{text-align:left;background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:12px 14px}
+.choice b{display:block}
+.choice span{font-size:14px;color:var(--muted)}
+.choice[aria-pressed="true"]{border-color:var(--accent);background:var(--soft)}
+.weeks{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.wk{text-align:left;background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:11px 12px;min-height:96px;display:flex;flex-direction:column;gap:2px}
+.wk .wtop{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.wk b{font-family:var(--display);font-size:17px}
+.wk .wt{font-size:13.5px;color:var(--muted);line-height:1.3}
+.wk .wbest{margin-top:auto;font-size:12.5px;font-weight:700;color:var(--accent)}
+.wk[aria-pressed="true"]{border-color:var(--accent);background:var(--soft)}
+.wk:disabled{opacity:.55;border-style:dashed}
+.counts{display:flex;gap:8px;flex-wrap:wrap}
+.cnt{border:2px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 16px;font-weight:700}
+.cnt[aria-pressed="true"]{border-color:var(--accent);background:var(--soft)}
+.summary{position:sticky;top:84px}
+.summary h2{font-size:18px;margin-bottom:10px}
+.summary dl{margin:0 0 16px;display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:15px}
+.summary dt{color:var(--muted)}
+.summary dd{margin:0;text-align:right;font-weight:700}
+.summary .btn{width:100%;margin-top:8px}
+.hint{font-size:13.5px;color:var(--bad);margin:6px 0 0}
+
+/* exam */
+.exam-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+.exam-top h1{font-size:19px}
+.timer{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:4px 12px;text-align:center}
+.timer small{display:block;font-size:11.5px;color:var(--muted)}
+.timer b{font-family:var(--display);font-size:22px;font-variant-numeric:tabular-nums}
+.timer.low{border-color:var(--bad);color:var(--bad)}
+.exam-grid{display:grid;grid-template-columns:1fr 260px;gap:18px;align-items:start}
+@media (max-width:860px){.exam-grid{grid-template-columns:1fr}}
+.qhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px}
+.qhead h2{font-size:18px}
+.tag{font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--soft);color:var(--accent)}
+.qtext{font-size:18px;margin:0 0 16px;max-width:70ch}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;background:var(--panel);border:2px solid var(--line);border-radius:12px;padding:12px 14px}
+.opt .ol{font-weight:700;color:var(--muted);min-width:1.4em}
+.opt .od{flex:1}
+.opt .om{font-size:13px;font-weight:700;white-space:nowrap}
+.opt.sel{border-color:var(--accent);background:var(--soft);box-shadow:inset 5px 0 0 var(--accent)}
+.opt.sel .ol{color:var(--accent)}
+.opt.right{border-color:var(--ok);background:var(--okBg)}
+.opt.right .om{color:var(--ok)}
+.opt.wrong{border-color:var(--bad);background:var(--badBg)}
+.opt.wrong .om{color:var(--bad)}
+.opt[disabled]{cursor:default}
+.opt:not([disabled]):hover{border-color:color-mix(in srgb,var(--accent) 60%,var(--line))}
+.qnav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.qnav .grow{flex:1}
+.keys{margin-top:10px;font-size:13px;color:var(--muted)}
+kbd{font-family:var(--body);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 5px;font-size:12px;background:var(--panel2)}
+.palette h2{font-size:16px;margin-bottom:10px}
+.pal{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}
+.pb{aspect-ratio:1.25;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);font-weight:700;font-size:14px}
+.pb.ans{background:var(--ok);border-color:var(--ok);color:#fff}
+.pb.mk{background:var(--mark);border-color:var(--mark);color:#fff}
+.pb.ansmk{background:var(--mark);border-color:var(--mark);color:#fff;box-shadow:inset 0 0 0 3px var(--ok)}
+.pb.wr{background:var(--bad);border-color:var(--bad);color:#fff}
+.pb.cur{outline:3px solid var(--accent);outline-offset:1px}
+.legend{list-style:none;padding:0;margin:14px 0 0;font-size:13.5px;display:grid;gap:6px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:8px;border:1.5px solid var(--line)}
+.feedback{margin-top:14px;padding:14px 16px;border-radius:12px;border-left:5px solid}
+.feedback.ok{background:var(--okBg);border-color:var(--ok)}
+.feedback.bad{background:var(--badBg);border-color:var(--bad)}
+.feedback .quip{font-family:var(--display);font-size:18px;font-weight:700;margin:0 0 6px}
+.feedback p{margin:4px 0 0;font-size:15px}
+.ref{font-size:13px;color:var(--muted);margin-top:6px}
+
+/* figure */
+.fig{display:flex;align-items:center;gap:0;overflow-x:auto;padding:10px 4px 6px;margin:0 0 6px}
+.fig .fs{font-size:13px;color:var(--muted);white-space:nowrap}
+.fig .fb{border:2px solid var(--ink);border-radius:10px;padding:10px 14px;font-weight:700;white-space:nowrap;background:var(--panel)}
+.fig .fb.q{border-style:dashed;border-color:var(--accent);color:var(--accent);min-width:56px;text-align:center}
+.fig .fa{width:26px;height:2px;background:var(--muted);position:relative;flex:none}
+.fig .fa::after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:7px solid var(--muted);border-right:0}
+.figcap{font-size:13.5px;color:var(--muted);margin:0 0 16px}
+
+/* modal */
+.scrim{position:fixed;inset:0;background:rgba(10,14,30,.55);display:grid;place-items:center;z-index:50;padding:18px}
+.modal{background:var(--panel);border-radius:18px;padding:22px;width:min(380px,100%);box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.modal h2{font-size:22px;margin-bottom:10px}
+.modal ul{margin:0 0 12px;padding-left:18px}
+.modal .row{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
+
+/* result */
+.rhero{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.ring{width:132px;height:132px;flex:none;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:32px}
+.rtext{flex:1;min-width:250px;position:relative;z-index:1}
+.rtext .meta{font-size:14px;opacity:.85;margin:0 0 4px}
+.rtext h1{font-size:clamp(28px,5vw,42px);max-width:none}
+.rtext p{margin:10px 0 0;font-size:17px;max-width:56ch}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+@media (max-width:640px){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--line);border-radius:14px;padding:14px}
+.tile b{font-family:var(--display);font-size:30px;display:block}
+.tile span{color:var(--muted);font-size:14px}
+.tile.ok{border-top-color:var(--ok)}.tile.bad{border-top-color:var(--bad)}.tile.mid{border-top-color:var(--warn)}
+.stood{margin-top:18px}
+.stood ul{margin:8px 0 0;padding-left:20px}
+.stood li{margin:4px 0}
+.rev-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:28px 0 12px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1.5px solid var(--line);background:var(--panel);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:700}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.rq{margin-bottom:14px}
+.rq .qhead{margin-bottom:6px}
+.status{font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:999px}
+.status.ok{background:var(--okBg);color:var(--ok)}.status.bad{background:var(--badBg);color:var(--bad)}.status.skip{background:var(--warnBg);color:var(--warn)}
+.verdict{margin:12px 0 0;font-weight:700;font-size:15px}
+.verdict.ok{color:var(--ok)}.verdict.bad{color:var(--bad)}.verdict.skip{color:var(--warn)}
+.why{margin:6px 0 0;font-size:15px}
+.empty{padding:26px;text-align:center;color:var(--muted)}
+.foot{text-align:center;color:var(--muted);font-size:13.5px;padding:10px 18px 30px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+@media (max-width:600px){.crumb{margin-right:4px;display:none}.brand b{font-size:16px}}
+.ukey{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--warnBg);color:var(--warn);font-size:13.5px}
+.band .switch+.switch{margin-left:0}
+.band-in{flex-wrap:nowrap}
+.bit{display:block;font-style:italic;color:var(--accent);font-size:14.5px;margin-top:2px}
+.tmsg:empty{display:none}
+.pnote{margin:14px 0 0;padding:10px 12px;border-radius:10px;background:var(--soft);font-size:14px}
+.tile em{display:block;font-size:12.5px;color:var(--accent);margin-top:2px}
+.ps{margin:22px 0 0;text-align:center;font-style:italic;color:var(--accent);font-family:var(--display);font-size:19px}
+.foot .small{opacity:.8}
+.logo{width:38px;height:38px;flex:none;border-radius:10px}
+.install{display:flex;gap:14px;align-items:flex-start;max-width:640px;margin:26px auto 0;padding:16px 18px;border-radius:16px;background:var(--panel);border:1px dashed var(--accent)}
+.install img{border-radius:12px;flex:none}
+.install .grow{flex:1}
+.install .btn{margin-top:10px}
+@media (display-mode: standalone){.band{padding-top:0}}
+.switch{white-space:nowrap}
+@media (max-width:600px){.tl{display:none}.band-in{gap:8px}.brand b{font-size:15px}}
+.wrap{padding-bottom:110px}
+.fab{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;gap:6px;z-index:40;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 28px)}
+.fab button{border:1.5px solid var(--accent);background:var(--panel);color:var(--ink);border-radius:999px;padding:8px 13px;font-weight:700;font-size:14px;box-shadow:0 8px 20px -10px rgba(10,15,40,.55)}
+.fab button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.bubble{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(66px + env(safe-area-inset-bottom,0px));width:min(360px,calc(100vw - 28px));background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:12px 14px;z-index:41;box-shadow:0 18px 40px -16px rgba(10,15,40,.6);animation:pop .22s ease}
+.bubble .bh{display:flex;justify-content:space-between;align-items:center;color:var(--accent)}
+.bubble p{margin:6px 0 8px;font-size:16px;font-family:var(--display);font-weight:600}
+.bubble .x{background:none;border:0;font-size:22px;line-height:1;color:var(--muted);padding:0 4px}
+@keyframes pop{from{transform:translateY(8px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+@media (max-width:420px){.fab button{padding:7px 10px;font-size:13px}}
+.fab.inline{position:static;margin-top:14px;justify-content:flex-start;max-width:none}
+.fab.inline button{box-shadow:none;padding:6px 10px;font-size:13px}
+.exam-grid+.bubble,.bubble{max-height:50vh;overflow:auto}
+.foot{padding-bottom:90px}
+.welcome{max-width:640px;margin:20px auto 0;text-align:center}
+.welcome .biglogo{width:96px;height:96px;border-radius:26px;box-shadow:0 16px 34px -18px rgba(30,40,90,.6)}
+.welcome h1{font-size:clamp(30px,6vw,48px);font-weight:800;margin-top:14px}
+.welcome .lede{color:var(--muted);font-size:17px;margin:12px 0 22px}
+.welcome .lede b{color:var(--ink)}
+.namebox{display:block;text-align:left;max-width:420px;margin:0 auto 14px;font-weight:700}
+.namebox em{font-weight:400;color:var(--muted)}
+.namebox input{display:block;width:100%;margin-top:6px;padding:12px 14px;font:inherit;font-weight:400;border:2px solid var(--line);border-radius:12px;background:var(--panel);color:var(--ink)}
+.namebox input:focus{outline:none;border-color:var(--accent)}
+.welcome .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.foot{padding-bottom:30px}.wrap{padding-bottom:48px}
+.credit{display:inline-block;padding:9px 18px;border-radius:999px;background:var(--soft);color:var(--accent);font-family:var(--display);font-weight:800;font-size:17px;margin-bottom:8px;border:1.5px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.foot{font-size:14px}
+.hodnote{max-width:560px;margin:8px auto 14px;padding:20px 24px;border-radius:18px;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--accent);box-shadow:0 14px 30px -22px rgba(20,30,80,.5);text-align:center}
+.hodnote blockquote{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(17px,2.6vw,20px);line-height:1.4;color:var(--ink)}
+.hodnote figcaption{margin-top:12px;color:var(--accent);font-size:15px}
+.hodnote figcaption span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.foot .small{display:block;margin-top:4px}
+</style></head><body><div id="app"></div><script>
+const WEEKS = {
+0:{t:"Computer and network basics",unofficial:true,q:[
+["Which component of a computer system is primarily responsible for executing instructions and performing logical calculations?",["Random Access Memory (RAM)","Hard Disk Drive (HDD)","Central Processing Unit (CPU)","Motherboard"],2,"The CPU executes instructions and does the calculations. RAM holds data, the HDD stores it, and the motherboard connects everything.","Assignment questions"],
+["What is the primary purpose of an IP address in a computer network?",["To identify the physical location of the user","To uniquely identify a device connected to a network","To encrypt data before transmission","To provide power to network interfaces"],1,"An IP address uniquely identifies a device on a network, so data knows where to go.","Assignment questions"],
+["Which of the following best describes the function of Random Access Memory (RAM)?",["It permanently stores the operating system.","It acts as volatile, temporary storage for data actively being used.","It handles long-term archival of documents.","It connects the computer to a local network."],1,"RAM is fast, temporary memory for whatever is in use right now. It's wiped when the power goes off.","Assignment questions"],
+["Which service is responsible for translating human-readable domain names into numerical IP addresses?",["Dynamic Host Configuration Protocol (DHCP)","File Transfer Protocol (FTP)","Domain Name System (DNS)","Hypertext Transfer Protocol (HTTP)"],2,"DNS is the internet's phone book: it turns names like google.com into IP addresses. DHCP is what hands out IP addresses.","Assignment questions"],
+["A network that connects computers and devices within a limited physical area, such as a single office building or a university laboratory, is known as a:",["Wide Area Network (WAN)","Personal Area Network (PAN)","Local Area Network (LAN)","Metropolitan Area Network (MAN)"],2,"One building or lab is a Local Area Network. A PAN is around one person, a MAN covers a city and a WAN goes wider.","Assignment questions"],
+["In the context of a basic computing architecture, which of the following acts as an input device (analogous to a sensor in an IoT system)?",["Printer","Keyboard","Monitor","Speaker"],1,"A keyboard feeds information in, just like a sensor. Printer, monitor and speaker are outputs, more like actuators.","Assignment questions"],
+["A Media Access Control (MAC) address is a hardware identification number typically hardcoded into which component?",["Central Processing Unit (CPU)","Power Supply Unit (PSU)","Network Interface Card (NIC)","System BIOS"],2,"The MAC address is burned into the network interface card.","Assignment questions"],
+["At the most fundamental hardware level, how is all digital data represented inside a computer?",["As alphanumeric characters","As hexadecimal codes","As continuous analog wave signals","As binary digits (0s and 1s)"],3,"Everything inside a computer is ultimately 0s and 1s. Hex and characters are just ways of displaying them.","Assignment questions"],
+["Which networking device operates by examining incoming data packets and determining the best path to forward them to their destination across different networks?",["Network Hub","Network Router","Network Switch","Wireless Access Point"],1,"A router picks the best path between different networks. A switch works inside one network, and a hub just repeats everything.","Assignment questions"],
+["What does the term “Cloud Storage” fundamentally refer to in basic internet architecture?",["Storing data on a localized external hard drive attached to a router","Storing data on remote servers managed by a provider and accessed via the internet","Compacting and zipping files to save space on a hard drive","Temporarily saving data in the computer's RAM"],1,"Cloud storage means your files live on a provider's remote servers and you reach them over the internet.","Assignment questions"],
+["What is the primary function of an Operating System (OS)?",["To protect the computer from physical hardware theft","To manage computer hardware resources and provide common services for computer programs","To translate foreign languages on web pages","To physically cool the CPU during heavy workloads"],1,"The OS manages the hardware and gives programs common services like files, memory and input.","Assignment questions"],
+["In a web browser's URL bar, what does the ‘s’ in HTTPS signify?",["Standard","System","Secure","Server"],2,"HTTPS means HTTP Secure: the connection is encrypted.","Assignment questions"],
+["Before a real-world physical metric (like temperature) can be processed by a computer, an analog signal must usually pass through which component?",["Digital-to-Analog Converter (DAC)","Arithmetic Logic Unit (ALU)","Analog-to-Digital Converter (ADC)","Universal Serial Bus (USB)"],2,"An ADC turns the analog reading into digital numbers the computer can use. A DAC goes the other way.","Assignment questions"],
+["What does the acronym URL stand for?",["Universal Record Locator","Uniform Resource Locator","Unified Routing Link","Universal Resource Link"],1,"URL stands for Uniform Resource Locator.","Assignment questions"],
+["Which protocol is the foundational standard for transmitting web pages and data over the World Wide Web?",["File Transfer Protocol (FTP)","Simple Mail Transfer Protocol (SMTP)","Secure Shell (SSH)","Hypertext Transfer Protocol (HTTP)"],3,"HTTP is the protocol of the web. FTP moves files, SMTP sends email and SSH is for secure remote login.","Assignment questions"]]},
+1:{t:"Sensors, actuators and IoT protocols",q:[
+["Which sensor can detect gases like LPG, CH4, and CO?",["DHT22","MQ-5","HC-SR04","PIR"],1,"MQ-5 is a gas sensor for LPG, natural gas (CH4) and CO. DHT22 measures temperature and humidity, HC-SR04 is an ultrasonic distance sensor and PIR detects motion.","Lecture 1, Slide 6"],
+["Which modulation scheme does Zigbee use for the 2.4 GHz band?",["BPSK","QPSK","OQPSK","FSK"],2,"In the 2.4 GHz band Zigbee (IEEE 802.15.4) uses Offset QPSK. BPSK is used in the sub-GHz bands.","Lecture 2, Slide 12"],
+["What does the Constrained RESTful Environments (CoRE) framework include for service discovery?",["Registration Interface (RI)","Resource Directory (RD)","REST based protocols such as HTTP and CoAP","All of the above"],3,"CoRE combines a resource directory, a registration interface and REST-style protocols like HTTP and CoAP, so all three apply.","Lecture 4, Slide 10"],
+["What is the maximum data rate of Z-Wave communication technology?",["100 kbps","250 kbps","500 kbps","1 Mbps"],0,"Z-Wave tops out at 100 kbps. 250 kbps is the IEEE 802.15.4 / Zigbee figure, which is the usual trap.","Lecture 3, Slide 4"],
+["Which protocol is CoAP based on?",["TCP","FTP","UDP","HTTP"],2,"CoAP runs over UDP to stay lightweight for constrained devices, while HTTP runs over TCP.","Lecture 5, Slide 10"],
+["Which coding scheme is used by the IEEE 802.15.4 standard for transmitting information?",["CSS","THSS","OFDM","DSSS"],3,"IEEE 802.15.4 uses Direct Sequence Spread Spectrum (DSSS).","Lecture 2, Slide 5"],
+["What does ‘Range’ indicate in a sensor?",["The correctness of the output","The smallest change in input that can be detected","The difference between the standard value and the value produced by the sensor","The highest and the lowest value of the physical quantity within which the sensor can actually sense"],3,"Range is the span between the lowest and highest values a sensor can measure. The other options describe accuracy, resolution and error.","Lecture 1, Slide 8"],
+["Which organization has developed the ISA 100.11a standard?",["Instrument Society of America","International Society of Automation","International Studies Association","International Solar Alliance"],1,"ISA 100.11a comes from the International Society of Automation. ‘Instrument Society of America’ is its old name, which is why it's the trap.","Lecture 3, Slide 8"],
+["Which of the following is/are the drawbacks of proprietary non-IP-based solutions?",["Limited flexibility to end users","Interoperability","Limited last-mile connectivity","All of these"],3,"Proprietary non-IP solutions suffer from all three: limited flexibility, interoperability problems and limited last-mile connectivity.","Lecture 4, Slide 6"],
+["Which MQTT QoS Level is also known as “at most once” delivery?",["QoS 0","QoS 1","QoS 2","None of these"],0,"QoS 0 is at most once (fire and forget), QoS 1 is at least once and QoS 2 is exactly once.","Lecture 5, Slide 7"],
+["Fill in the blank space designated by the question mark.",["Snubber","Repeater","Processor","Amplifier"],2,"The sensor's output goes to a processor, which decides what the actuator should do: sensor, then processor, then actuator.","Lecture 1, Slide 2",1],
+["Which of the following best describes a vector sensor?",["Its response depends only on the temperature.","Its response depends only on the magnitude of the input.","Its response depends on the magnitude, direction, and orientation of the input parameter.","Its response is independent of the input parameter."],2,"A vector sensor responds to magnitude, direction and orientation. A scalar sensor responds to magnitude only.","Lecture 1, Slide 20"],
+["Which of the following frequency ranges is used by 6LoWPAN worldwide?",["902–929 MHz","2400–2483.5 MHz","1800–1900 MHz","5.8 GHz"],1,"Worldwide, 6LoWPAN uses the 2.4 GHz ISM band (2400–2483.5 MHz). The 902 MHz band is regional.","Lecture 2, Slide 17"],
+["In DDS RTPS, data is referred to as:",["Packets","Frames","Messages","Topics"],3,"In DDS and its RTPS protocol, data is organised and published as Topics.","Lecture 5, Slide 22"],
+["Which of the following IoT protocols is based on the session layer of the OSI model?",["MQTT","CoAP","AMQP","DTLS"],3,"According to the prescribed book, DTLS is the one placed at the session layer.","Prescribed book, page 7"]]},
+2:{t:"Industry 4.0, lean and the smart factory",q:[
+["What is a significant characteristic of new materials in the context of the Fourth Industrial Revolution?",["High cost and scarcity","Lighter, stronger, recyclable, and adaptive","Easily available but very expensive","Non-recyclable and heavy"],1,"New 4IR materials are described as lighter, stronger, recyclable and adaptive.","Lecture 1, Slide 19"],
+["Which of the following is NOT a characteristic of the Fourth Industrial Revolution?",["Extensive use of the ubiquitous and mobile internet","Use of artificial intelligence and machine learning","Invention of the steam engine","Development of Cyber Physical Systems (CPS)"],2,"The steam engine belongs to the First Industrial Revolution.","Lecture 1, Slide 5"],
+["What is considered the main nervous system of any manufacturing industry?",["Human Resources","Information and Communication Technology (ICT)","Supply Chain Management (SCM)","Marketing"],1,"ICT is called the nervous system of manufacturing because it connects every function.","Lecture 2, Slide 7"],
+["Which of the following is not a characteristic of a sustainable industry?",["Energy efficiency","Reliance on government subsidy","Conservation of resource","Low-waste production"],1,"A sustainable industry stands on its own. Depending on subsidies is not a sustainability trait.","Lecture 2, Slide 2"],
+["What does L, D and T stand for under ‘People Engagement’ in the Lean production System?",["Learn, Do, Teach","Leverage, Divulge, Teardown","Lean, Diverse, Timid","Loan, Deploy, Test"],0,"People engagement in Lean is Learn, Do, Teach.","Lecture 3, Slide 15"],
+["Which resource is associated with the ‘Optimization’ categorization of Smart and connected products?",["Optimization algorithms","Manual controls","Marketing data","Financial reports"],0,"Optimization in smart connected products relies on optimization algorithms.","Lecture 4, Slide 9"],
+["State True or False. The amalgamation of CPS and the evolution of Internet-based technologies led to the development of the Industrial Internet.",["True","False"],0,"True. CPS combined with Internet technologies gave rise to the Industrial Internet.","Prescribed book, page 36"],
+["State True or False. Real-time supply chain monitoring reduces inventory and capital requirements.",["True","False"],0,"True. Seeing stock in real time means less buffer inventory and less capital tied up.","Prescribed book, page 40"],
+["In the context of Industry 4.0, what is the full form of CPS?",["Controlled Power System","Customer Provisioning Service","Cloud Processing Service","Cyber Physical Systems"],3,"CPS stands for Cyber Physical Systems.","Lecture 1, Slide 5"],
+["What does ERP stand for in the context of ICT?",["Enterprise Resource Planning","Electronic Resource Platform","Enhanced Reporting Protocol","Economic Resource Planning"],0,"ERP stands for Enterprise Resource Planning.","Lecture 2, Slide 7"],
+["What is a ‘value stream’ in Lean Production System?",["A set of tools for production","All the actions required for a product from order to delivery","A method of employee training","A type of waste reduction"],1,"A value stream is every action needed to take a product from order to delivery.","Lecture 3, Slide 7"],
+["Which of the following are key attributes of a smart business model?",["Manual processes, cost reduction, and labor dependency","Value proposition, revenue streams, and technologies","Traditional marketing, fixed costs, and limited innovation","Centralized control, non-digital strategies, and fixed processes"],1,"A smart business model rests on value proposition, revenue streams and technologies.","Lecture 4, Slide 12"],
+["Which of the following is not a component of a Smart Factory?",["Smart machines","Smart manufacturing processes","Information Technology","Physical ledgers"],3,"Paper ledgers are the opposite of a smart factory.","Lecture 5, Slide 5"],
+["In which format is healthcare data transmitted to maintain data uniformity and interoperability?",["HL-7","LH-5","HD-7","None of these"],0,"HL7 (Health Level Seven) is the standard format for healthcare data interoperability.","Prescribed book, page 41"],
+["What are the key characteristics of agility?",["Stability, Rigidity, and Standardization","Flexibility, Adaptation, and Self-configuration","Planning, Controlling, and Monitoring","Automation, Documentation, and Testing"],1,"Agility means flexibility, adaptation and self-configuration.","Lecture 5, Slide 16"]]},
+3:{t:"Cyber physical systems, AR and AI",q:[
+["What does “reactive computation” in CPS signify?",["Systems with zero response time","Interaction with the environment in an ongoing manner","Predefined computation processes","Complete isolation from physical feedback"],1,"Reactive computation means the CPS keeps interacting with its environment continuously.","Lecture 1, Slide 6"],
+["Fill in the blank. In healthcare applications, CPS is used for __________.",["Image-guided surgery and therapy","Manual monitoring of vitals","Static hospital management systems","Front desk management"],0,"CPS powers image-guided surgery and therapy. The other options are manual or static.","Lecture 1, Slide 8"],
+["Which level in the “5C Architecture” ensures the gathering of precise status information of machines?",["Conversion","Cognition","Cyber","Configuration"],2,"In the lecture, the Cyber level is where precise status information of machines is gathered, acting as the central information hub.","Lecture 1, Slide 15"],
+["Fill in the blank. Intelligent sensors are capable of __________.",["Only sensing data","Processing sensed data and managing external sensors/devices","Limited communication","Basic analog-to-digital conversion"],1,"Intelligent sensors process what they sense and can manage external sensors and devices.","Lecture 1, Slide 23"],
+["How many steps are there in the PLM solution approach in Industry 4.0?",["10","12","8","7"],0,"The PLM solution approach in Industry 4.0 has 10 steps.","Lecture 2, Slide 24"],
+["Which of the following is not a key component of an AR Device?",["Sensors","Cameras","Projection Screen","Remote Control"],3,"AR devices need sensors, cameras and a projection or display. A remote control isn't a core part.","Lecture 3, Slide 8"],
+["Which of the following is NOT a challenge of AI in IIoT?",["Connecting devices","Understanding data","Training AI models","Lack of available data"],3,"IIoT produces huge amounts of data, so a lack of data is not the problem.","Lecture 4, Slide 13"],
+["Which of the following is not one of the primary constraints of mobile CPS?",["Stability of the network","Power requirement","Security","Design aesthetics"],3,"Mobile CPS constraints are network stability, power and security. Looks don't count.","Prescribed book, page 44"],
+["What are the components of the 5C architecture for CPS?",["Connection, Conversion, Cyber, Cognition, Configuration","Creation, Controlling, Continuation, Convergence, Compatibility","Calculation, Catalysis, Convergence, Convenience, Cognizance","None of these"],0,"5C stands for Connection, Conversion, Cyber, Cognition and Configuration.","Introduction to IoT (Misra et al.), page 68"],
+["What is one of the key features of CPS in terms of computation?",["Static computation","Reactive computation","Limited computation","Redundant computation"],1,"Same idea as the first question this week: CPS computation is reactive.","Lecture 1, Slide 6"],
+["What is a collaboration platform in the context of Industry 4.0?",["A type of business software that combines organizational networking capacities with operations","A social media platform for employees","A traditional project management tool","A financial management system"],0,"A collaboration platform is business software that combines networking capacities with operations.","Lecture 2, Slide 2"],
+["What is a key feature of Augmented Reality (AR)?",["Completely replacing the physical environment","Enhancing the present perception of reality","Only providing auditory feedback","Operating in isolated systems"],1,"AR enhances what you already see. Completely replacing reality is VR.","Lecture 3, Slide 4"],
+["Who proposed the first use of the phrase “Artificial Intelligence”?",["Alan Turing","John McCarthy","Marvin Minsky","Herbert Simon"],1,"John McCarthy coined ‘Artificial Intelligence’ for the 1956 Dartmouth workshop.","Lecture 4, Slide 4"],
+["Which of the following statements is true?",["A program without AI uses a large knowledge base and a heuristic search method","A program with AI uses a large database and an algorithmic search method","A program with AI uses a large knowledge base and a heuristic search method","A program without AI uses a large database and a heuristic search method"],2,"AI programs use a knowledge base with heuristic search. Non-AI programs use a database with algorithmic search.","Lecture 4, Slide 5"],
+["Which of the following are constraints of mobile CPS?",["Network stability","Power requirement","Security","All of the above"],3,"All three are constraints. This is the mirror image of question 8.","Prescribed book, page 44"]]},
+4:{t:"Security, the Industrial Internet and smart sensors",q:[
+["What does Application Security aim to protect against?",["Unauthorized physical access","Threats to the software applications","Data breaches from the internet","Network architecture issues"],1,"Application security protects software applications from threats.","Lecture 1, Slide 6"],
+["What is Ransomware?",["A type of malware that provides a facility to the attacker to lock users’ computer files by using encryption and demand money to unlock them","A program that increases computer performance","A system to enhance network speed","A method to secure data from unauthorized access"],0,"Ransomware encrypts the victim's files and demands money to unlock them.","Lecture 1, Slide 11"],
+["What is a major challenge in the deployment of IIoT?",["Legacy installations","Cybersecurity","Lack of standardization","All of the above"],3,"All three are major IIoT deployment challenges.","Lecture 2, Slide 8"],
+["What are the three waves of industrial level innovation according to GE?",["The Internet Revolution, The Digital Revolution, The Industrial Internet","The Industrial Revolution, The Internet Revolution, The Industrial Internet","The Agricultural Revolution, The Internet Revolution, The Industrial Internet","The Scientific Revolution, The Industrial Revolution, The Internet Revolution"],1,"GE's three waves: the Industrial Revolution, the Internet Revolution, then the Industrial Internet.","Lecture 3, Slide 3"],
+["What is a major drawback of the Industrial Revolution?",["It had no impact on the environment","It created a bad working environment and inefficient processes","It reduced the use of fossil fuels","It enhanced the quality of life for all workers"],1,"The Industrial Revolution brought poor working conditions and inefficient processes.","Lecture 3, Slide 7"],
+["Which component is NOT part of the configurations involved in smart sensors?",["Multiparameter Sensing Unit","Analog Detection Circuit","Digital Signal Conditioning Unit","Manual Control Unit"],3,"Smart sensors are automatic, so a manual control unit isn't part of them.","Lecture 4, Slide 8"],
+["Which sector is predicted to have the highest growth in Industry 4.0?",["Electronics","Manufacturing","Defense","Automotive"],0,"The lecture names electronics as the sector with the highest predicted growth.","Lecture 5, Slide 3"],
+["What is the focus of the ‘Control Layer’ in the 5C Architecture for Cyber Physical Systems?",["Data collection","Sensor-based monitoring","Supervised control: Self-configure, Self-optimize, Self-adjust","Human-readable interpretation and data visualization"],2,"The control layer gives supervisory control: the system configures, optimizes and adjusts itself.","Lecture 5, Slide 9"],
+["Why are IIoT Security Standards required, especially when diverse systems and equipment are integrated on a smart factory floor?",["To reduce the cost of implementing IIoT.","Because leaving security to individual IIoT implementers is dangerous and every weak line puts the whole factory at risk.","To ensure that only new systems are implemented, not legacy ones.","To increase the complexity of the smart factory floor."],1,"One weak link puts the whole factory at risk, so security can't be left to each implementer.","Lecture 1, Slide 14"],
+["In the mining industry, how do sensor networks with gas sensors, strata monitoring devices, and RFID tags contribute to safety and efficiency?",["They only help in tracking miners’ locations.","They are primarily used for communication between miners.","They replace the need for human inspection.","They provide early disaster warning, monitor working conditions, and help locate miners."],3,"These sensor networks give early disaster warning, monitor working conditions and help locate miners.","Lecture 2, Slides 18 and 19"],
+["Who coined the term “Industrial Internet”?",["IBM","General Electric (GE)","Intel","Siemens"],1,"General Electric coined the term ‘Industrial Internet’.","Lecture 3, Slide 2"],
+["In a milk packaging unit, how is flow measured?",["Using a thermometer","Via a spinning impeller that sends signals when milk flows","With a smart camera","Using a GPS module"],1,"A spinning impeller sends pulses as the milk flows, and that measures the flow.","Lecture 4, Slide 12"],
+["Which component is responsible for converting analog data to digital data in a smart sensor node?",["Processor","Memory","ADC","DAC"],2,"The ADC converts analog to digital. A DAC does the reverse.","Lecture 4, Slide 9"],
+["Fill in the blank. Thames Water’s smart water management system, as an example of Industrial Process 4.0 operation efficiency, primarily benefits from __________.",["Data monetization and pay-per-use models.","Sensor-based equipment status monitoring and failure detection.","Augmented Reality-based problem diagnosis.","Controlled power generation using weather forecasts."],1,"Thames Water uses sensors to monitor equipment status and detect failures.","Lecture 5, Slide 11"],
+["State true or false. In the case of spear phishing, the attackers send thousands of deceitful emails that resemble actual emails from credible sources, while email phishing attacks are targeted at a specific person or organization to obtain sensitive information.",["True","False"],1,"False, the two are swapped. Email phishing is the mass blast, and spear phishing targets a specific person or organisation.","Prescribed book, page 69"]]},
+5:{t:"IIoT business models and the IIRA",q:[
+["Which company employs the “Air-as-a-Service” model by using sensor-equipped air compressors where users pay per cubic meter of air?",["John Deere","Kaeser Kompressoren","Magna Steyr","Gehring"],1,"Kaeser Kompressoren sells compressed air per cubic metre instead of selling the compressors.","Lecture 1, Slide 10"],
+["In the context of the Hitachi integrated IIoT platform, what is the name of the core IoT platform used for AI-powered advanced analytics?",["Predix","MindSphere","Lumada","Connext"],2,"Hitachi's platform is Lumada. Predix is GE and MindSphere is Siemens.","Lecture 1, Slide 8"],
+["In the context of Smart Logistics, which company uses IoT and analytics to remotely monitor and optimize fuel consumption for refrigerated and dry cargo containers?",["Boeing","Maersk","Komatsu","Stanley Black & Decker"],1,"Maersk remotely monitors its refrigerated and dry cargo containers.","Lecture 1, Slide 17"],
+["In the building blocks of a business model, which of the following represents a quantitative value proposition?",["Design","Brand perception","Customer experience","Post-purchase cost reduction"],3,"Cost reduction can be measured, so it's quantitative. The others are qualitative.","Lecture 2, Slide 4"],
+["Which IoT business model enables businesses to virtually consolidate and share their IoT-enabled assets among multiple customers to minimize downtime and maximize utilization?",["Subscription Model","Asset-Sharing Model","Outcome-Based Model","IoT-as-a-Service"],1,"The asset-sharing model shares IoT-enabled assets across customers to maximise utilisation.","Lecture 2, Slide 19"],
+["In a Cloud-Based Business Model, which offering provides development-oriented platforms to facilitate the integration of applications into existing solutions?",["Software-as-a-Service (SaaS)","Infrastructure-as-a-Service (IaaS)","Platform-as-a-Service (PaaS)","Network-as-a-Service (NaaS)"],2,"PaaS gives developers a platform to build and integrate applications.","Lecture 3, Slide 7"],
+["In the functional flow of IIoT business models, which model specifically employs Cloud-based business models to gather data, analyze it, and sell it as a service?",["Service-Oriented Business Model","Process-Oriented Business Model","Product-Oriented Business Model","Asset-Sharing Business Model"],0,"The service-oriented model uses the cloud to collect and analyse data and sell it as a service.","Lecture 3, Slide 24"],
+["Which of the following is considered a lagging Key Performance Indicator (KPI) for Occupational Safety and Health (OSH)?",["Frequency of observed unsafe behavior","Number of OSH audits","Percentage of workers with adequate OSH training","Number of fatalities"],3,"Lagging KPIs measure outcomes after the fact, like fatalities. The other three are leading indicators.","Lecture 4, Slide 6"],
+["According to the Industrial Internet Consortium (IIC), what is the primary purpose of their developed testbeds?",["To initiate, conceptualize, and rigorously test innovations before market launch","To handle manual data entries for traditional factories","To increase the processing downtime in manufacturing sectors","To establish isolated machine operations away from the cloud"],0,"IIC testbeds let innovations be conceived and rigorously tested before launch.","Lecture 4, Slide 8"],
+["In the Business Viewpoint of the IIRA framework, what provides the logic regarding the merit of the vision and is validated by stakeholders?",["Key Objectives","Fundamental Capabilities","Values","System Requirements"],2,"Values explain why the vision is worthwhile, and stakeholders validate them.","Lecture 5, Slide 7"],
+["In the Usage Viewpoint of the IIRA framework, what describes the state of the IIoT system after the successful completion of an activity?",["Trigger","Workflow","Constraints","Effect"],3,"The Effect is the state after an activity completes. The Trigger is what starts it.","Lecture 5, Slide 13"],
+["Which functional domain in the IIRA functional viewpoint represents the set of functions responsible for the provisioning, deployment, and management of assets?",["Control domain","Operations domain","Information domain","Application domain"],1,"The Operations domain provisions, deploys and manages assets.","Lecture 5, Slide 17"],
+["An IIoT system architect is designing a framework that requires the semantic transformation of assembled data and the subsequent implementation of specific rules to realize a targeted business function. According to the IIRA Functional Viewpoint, which two domains are specifically responsible for handling these respective requirements?",["Information domain and Application domain","Operations domain and Business domain","Information domain and Business domain","Application domain and Control domain"],0,"The Information domain handles semantic transformation of data, and the Application domain applies the rules for the business function.","Lecture 5, Slides 19 and 21"],
+["Which of the following is NOT categorized as one of the fundamental activities in a business model?",["Production","Problem-solving","Platform management","Philanthropy"],3,"The three fundamental activities are production, problem-solving and platform management.","Prescribed book, pages 103–104"],
+["In the context of IIoT business models, what is the term used for the mechanism by which a service provider transforms the present value of assets into ones with financial value?",["Value Proposition","Value Network","Value Capturing Mechanism","Value Communication"],2,"The value capturing mechanism turns the value of assets into money.","Prescribed book, page 108"]]},
+6:{t:"Industrial sensors and communication protocols",q:[
+["Which of the following is highlighted as a benefit of sensor usage in industrial applications for improving overall operations?",["Improving visibility","Increasing manual inspection","Enhancing latency","Reducing production rate"],0,"Sensors improve visibility into operations.","Lecture 1, Slide 5"],
+["Which type of sensor is primarily used for the inspection of steel pipes and detecting time-varying stresses or strains in ferromagnetic materials?",["Torque sensor","Vacuum sensor","Magnetostrictive sensor","Image sensor"],2,"Magnetostrictive sensors detect stresses and strains in ferromagnetic materials such as steel pipes.","Lecture 1, Slide 21"],
+["The DS1621 temperature sensor is a digital sensor that communicates via an I2C bus and generates temperature data of how many bits?",["8 bits","32 bits","16 bits","9 bits"],3,"The DS1621 gives 9-bit temperature readings over I2C.","Lecture 1, Slide 16"],
+["In the context of gas sensor characteristics, how is “Selectivity” defined?",["The ability to detect a particular gas in a mixture of different gases","The time taken to stabilize its response","The change in output signal with respect to unit change in input","The ability to return to its base resistance value"],0,"Selectivity is picking out one gas from a mixture. The others describe response time, sensitivity and recovery.","Lecture 2, Slide 6"],
+["What happens to the resistance of an n-type metal oxide semiconductor (MOS) gas sensor when it is exposed to a reducing gas?",["It remains unchanged","It increases","It decreases","It fluctuates randomly"],2,"A reducing gas releases electrons into an n-type MOS, so its resistance drops.","Lecture 2, Slide 5"],
+["How many active connections or sockets does the ModBus-TCP protocol typically support at one time?",["Up to 5","Up to 10","Up to 64","Up to 254"],1,"Modbus-TCP typically supports up to 10 active connections.","Lecture 3, Slide 7"],
+["In EtherNet/IP, which primary type of communication is used to handle real-time I/O data through continuous message transfer?",["Implicit","Explicit","Acyclic","Asynchronous"],0,"Implicit messaging carries real-time I/O. Explicit messaging is request and response, used for configuration.","Lecture 3, Slide 14"],
+["Time-Sensitive Networking (TSN) is an extension of Ethernet developed to enable deterministic communication. Which IEEE standard is it primarily based on?",["IEEE 802.15.4","IEEE 802.1Q","IEEE 802.1F","IEEE 802.1P"],1,"TSN builds on IEEE 802.1Q.","Lecture 3, Slide 20"],
+["In a Profibus DP (Decentralized Peripherals) network, how many devices are supported at a single time without the use of repeaters?",["10","128","64","32"],3,"Profibus DP supports 32 devices per segment without repeaters.","Lecture 4, Slide 4"],
+["What is the global operating frequency utilized by the CC-Link communication protocol?",["2.4 GHz","5.0 GHz","13.56 MHz","433 MHz"],2,"The lecture gives 13.56 MHz as CC-Link's global operating frequency.","Lecture 4, Slide 12"],
+["The DeviceNet communication protocol links industrial sensors and actuators with Programmable Logic Controllers (PLCs) and is based on which standard?",["CAN (Controller Area Network)","IEC 61158","IEEE 802.3","WIA-PA"],0,"DeviceNet is built on CAN.","Lecture 4, Slide 14"],
+["Which of the following is an advantage of the WIA-PA (Wireless Networks for Industrial Automation-Process Automation) standard?",["It operates exclusively on wired fiber optics","It supports Adaptive Frequency Hopping (AFH)","It removes the need for data packet aggregation","It replaces satellite communication"],1,"WIA-PA supports Adaptive Frequency Hopping to dodge interference.","Lecture 4, Slide 26"],
+["For Ultra-Reliable Low Latency Communication (URLLC) in 5G, what is the specified target for availability?",["3-Nines (99.9%)","4-Nines (99.99%)","5-Nines (99.999%)","6-Nines (99.9999%)"],3,"URLLC targets six nines: 99.9999% availability.","Lecture 5, Slide 21"],
+["Which of the following is an objective of Device-to-Device (D2D) Communication in cellular networks?",["Increasing the load on the core network","Eliminating the load on the core network","Maximizing propagation delay","Restricting communication to wired endpoints"],1,"D2D lets devices talk directly, taking the load off the core network.","Lecture 5, Slide 13"],
+["Which of the following is considered a primary disadvantage of millimeter-wave (mmWave) communication?",["It requires huge antenna element sizes","It utilizes the heavily congested <1 GHz band","It suffers from high penetration loss and shadowing","It provides very low data throughput"],2,"mmWave signals are easily blocked, giving high penetration loss and shadowing. Its antennas are actually small and throughput is high.","Lecture 5, Slide 28"]]},
+7:{t:"LPWAN, Zigbee, analytics and control systems",q:[
+["Which modulation technique is incorporated by LoRa technology?",["Frequency Shift Keying (FSK)","Phase Shift Keying (PSK)","Chirp Spread Spectrum (CSS)","Amplitude Shift Keying (ASK)"],2,"LoRa uses Chirp Spread Spectrum.","Lecture 1, Slide 4"],
+["What is the maximum wireless throughput achieved by the SIGFOX network?",["Up to 100 bits per second","Up to 100 bytes per second","Up to 140 bits per second","Up to 1000 bits per second"],0,"SIGFOX manages up to about 100 bits per second. The 140 figure is its messages-per-day limit, a classic trap.","Lecture 1, Slide 5"],
+["Depending on the device variant, what is the typical communication range for a Zigbee network?",["1 to 5 meters","10 to 100 meters","500 to 1000 meters","1 to 10 kilometers"],1,"Zigbee covers roughly 10 to 100 metres depending on the device.","Lecture 2, Slide 5"],
+["In a Zigbee network, which device is specifically responsible for relaying information to other nodes and can also run small-scale applications?",["Coordinator","End device","Gateway","Router"],3,"Zigbee routers relay data and can run small applications. The coordinator starts and manages the network.","Lecture 2, Slide 6"],
+["Which software is used to discover and configure Xbee modules before utilizing them for communication?",["XCTU","Arduino IDE","NodeMCU Flasher","PuTTY"],0,"Digi's XCTU discovers and configures XBee modules.","Lecture 2, Slide 8"],
+["Which type of IIoT analytics primarily focuses on answering the questions “What already happened and currently happening” using dashboards and reports?",["Predictive Analytics","Prescriptive Analytics","Descriptive Analytics","Diagnostic Analytics"],2,"Descriptive is what happened, diagnostic is why, predictive is what will happen and prescriptive is what to do.","Lecture 3, Slide 9"],
+["Many middleware solutions in IIoT processing architectures are based on which of the following?",["Service-Oriented Architecture (SOA)","Microservices Architecture","Monolithic Architecture","Layered Databus Architecture"],0,"Many IIoT middleware solutions are SOA-based.","Lecture 3, Slide 7"],
+["In the FarmBeats architecture, which component incorporates weather-aware decisions and UAV flight planning?",["IoT Base Station","Cloud-Services","Network of Soil Sensors","IoT Gateway"],3,"In FarmBeats, the IoT gateway handles weather-aware decisions and UAV flight planning.","Lecture 4, Slide 2"],
+["In the AR Drones-based Precision Agriculture system, what is the specific role of the video processing module deployed in the laptop?",["To control the flight path of the UAV remotely","To detect the weeds and generate coordinates","To actuate the precision sprayer directly via Bluetooth","To capture GPS-tagged video directly from the field"],1,"The laptop's video module detects weeds and generates their coordinates for the sprayer.","Lecture 4, Slide 7"],
+["In the iRobot-Factory architecture, which component is tasked with high-performance, long-term data analytics using artificial intelligence techniques?",["Intelligent Terminal","Edge Computing Node","Cognitive Engine","Production Line Layer"],2,"The Cognitive Engine does the high-performance, long-term AI analytics.","Lecture 4, Slide 15"],
+["According to the phases of Big Data Driven Smart Manufacturing, what is the primary focus of “Phase 2”?",["Integration of data and contextual information","Innovation in process and production","Initial deployment of sensor nodes","Synthesis and analysis to build knowledge for decision making"],3,"Phase 2 is synthesis and analysis to build knowledge for decision making.","Lecture 4, Slide 17"],
+["In a Smart Warehousing system, which module is specifically responsible for organizing and processing data, generating events in real-time, and history-based decision making?",["Administrative module","Data collection module","RFID tag module","REST-based framework"],0,"The administrative module organises data, raises real-time events and makes history-based decisions.","Lecture 4, Slide 19"],
+["In the context of an Industrial Control System (ICS), what is a “Set Point”?",["The physical location where a sensor is deployed","The standard value of the process parameter for controlled operation","The value of a process parameter measured by a sensor","The actuator used to manipulate the process"],1,"The set point is the target value. The measured value is the process variable.","Lecture 5, Slide 2"],
+["Which type of control loop makes control decisions entirely independent of the measured process variable?",["Closed Loop Control","Feedback Control","Open Loop Control","Proportional Control"],2,"Open-loop control ignores the measured output entirely.","Lecture 5, Slide 4"],
+["Which of the following is a primary component of a Supervisory Control and Data Acquisition (SCADA) system?",["Complex Event Processor (CEP)","Centralized Cloud Services","Unmanned Aerial Vehicles (UAVs)","Remote Telemetry Units (RTUs)"],3,"Remote Telemetry Units are a core SCADA component.","Lecture 5, Slide 8"]]},
+8:{t:"Analytics, machine learning and industrial cloud",q:[
+["Which type of IIoT analytics is responsible for informing about the remaining useful life of an asset and typically operates on a timescale of hours?",["Baseline analytics","Diagnostic analytics","Prescriptive analytics","Prognostic analytics"],3,"Prognostic analytics predicts an asset's remaining useful life.","Lecture 1, Slide 10"],
+["Which of the following software tools is highlighted for its use in Complex Event Processing (CEP) during real-time stream analytics?",["Apache Hadoop","Apache Spark","Apache Storm","Jupyter"],2,"Apache Storm is the one highlighted for complex event processing on real-time streams.","Lecture 1, Slide 12"],
+["In the context of unsupervised learning, what is a primary distinction of the Fuzzy c-Means (FCM) algorithm compared to K-Means?",["FCM allows a data point to belong to more than one cluster","FCM is significantly slower than K-Means","FCM requires a labeled dataset to operate","FCM is categorized as Hard Clustering"],0,"Fuzzy c-means is soft clustering: one point can belong to several clusters to different degrees.","Lecture 2, Slides 8 and 9"],
+["Which supervised learning algorithm is specifically utilized when the output variable to be predicted is a real number (e.g., dollars or weight)?",["Classification","Clustering","Reinforcement Learning","Regression"],3,"Predicting a real-valued output is regression.","Lecture 2, Slide 10"],
+["What is a key difference between Reinforcement Learning (RL) and Supervised Learning?",["RL is guided by an external supervisor who knows the environment","RL utilizes a reward function that acts as feedback to the agent","RL maps inputs directly to outputs without an agent","Supervised learning models build knowledge graphs from actions"],1,"RL learns from a reward signal rather than labelled answers from a supervisor.","Lecture 2, Slide 15"],
+["Which of the following statements best describes why Deep Learning differs from traditional Machine Learning in industrial applications?",["Deep learning performs significantly worse as the data volume increases","Deep learning is an “end-to-end learning” process that extracts features on its own","Deep learning requires features to be explicitly mentioned by domain experts","Deep learning requires very low computational power"],1,"Deep learning is end-to-end and learns its own features.","Lecture 3, Slide 10"],
+["Which company utilizes Collaborative Distributed Deep Learning technology where the learning process is performed in the cloud while inference is conducted at the edge?",["Zebra Medical Vision","Intel","H2O","TOSHIBA"],3,"Toshiba: learning happens in the cloud, inference at the edge.","Lecture 3, Slide 16"],
+["Which of the following is an example of an industrial Software-as-a-Service (SaaS) application?",["Industrial Machinery Catalyst from Siemens","Microsoft Azure","GE Predix","Amazon Web Services (AWS)"],0,"Siemens' Industrial Machinery Catalyst is SaaS. Azure, AWS and Predix are platforms and infrastructure.","Lecture 4, Slide 8"],
+["A cloud setup that is designed by combining two or more unique cloud infrastructures (public or private) to provide flexibility for data and application movement is called a:",["Public Cloud","Community Cloud","Hybrid Cloud","Private Cloud"],2,"Combining two or more cloud infrastructures is a hybrid cloud.","Lecture 4, Slide 11"],
+["Which industrial cloud platform utilizes “Digital Twin Technology” for learning, estimating, optimizing, and representing assets?",["Sentience (Honeywell)","GE Predix","Siemens MindSphere","Meshify"],1,"GE Predix is the one built around digital twins.","Lecture 4, Slide 18"],
+["The C3 IoT platform provides a storage service for unstructured data known as the C3 Data Lake. In which format is this data primarily managed?",["XML format","RESTful format","Simple Object format","SQL Relational format"],1,"The C3 Data Lake manages unstructured data in RESTful format.","Lecture 5, Slide 3"],
+["Which of the following industrial IoT platforms specifically provides solutions like “Now” and “Tracker” for real-time asset tracking with geo-localized data?",["Uptake","C3 IoT","Meshify","Honeywell"],2,"Meshify offers Now and Tracker for geo-localised asset tracking.","Lecture 5, Slides 7 and 8"],
+["Which of the following is a crucial feature that an IIoT cloud platform provider should offer for effective device management?",["Device decommission","Physical hardware manufacturing","Manual data provisioning","Increasing network blind spots"],0,"Good device management includes being able to decommission devices.","Lecture 5, Slide 10"],
+["According to Sturm et al., which of the following is one of the defined characteristics of a “Meaningful SLA” (Service Level Agreement)?",["Subjective","Uncontrollable","Quantifiable","Unachievable"],2,"A meaningful SLA must be quantifiable.","Lecture 5, Slide 13"],
+["How does Fog Computing primarily address the limitations of a purely centralized cloud-based approach in IIoT?",["By identifying useful data and reducing the amount of raw data sent to the cloud","By completely replacing the cloud infrastructure","By increasing the latency of time-sensitive data","By restricting the mobility of edge devices"],0,"Fog nodes pick out the useful data, so less raw data goes to the cloud.","Lecture 5, Slide 22"]]},
+9:{t:"Fog, big data, data centres and SDN",q:[
+["How does fog computing prevent unnecessary noisy big data from crowding the cloud?",["By storing all raw data permanently in the cloud","By performing prior filtration at the edge","By disabling real-time control algorithms","By increasing the frequency of sensor transmission"],1,"Fog filters the data at the edge before it reaches the cloud.","Lecture 1, Slide 6"],
+["Which capability is provided by the fog-based industrial platform?",["Merging real-time and non-real-time workloads","Restricting the platform to non-real-time workloads","Transmitting all sensor data without processing","Eliminating control of IoT endpoints"],0,"Fog platforms run real-time and non-real-time workloads together.","Lecture 1, Slide 16"],
+["Which fog-platform provider offers an edge-node software solution that supports any protocol, any PLC, and any hardware?",["FogHorn","Sonm","Crosser","Nebbiolo Technologies"],2,"Crosser's edge-node software supports any protocol, any PLC and any hardware.","Lecture 1, Slide 21"],
+["What is the purpose of the %in% special operator in R?",["To create a series of numbers for a vector","To check whether an element belongs to a vector","To perform integer division","To assign a value globally"],1,"%in% checks membership. %/% does integer division and the colon operator creates a series.","Lecture 2, Slide 11"],
+["Which validation method is used in the demonstrated R machine-learning execution process to estimate model accuracy?",["Two-fold cross-validation","Leave-one-out validation","Ten-fold cross-validation","Validation without data partitioning"],2,"The R demo uses 10-fold cross-validation.","Lecture 2, Slide 16"],
+["Which Julia function is used to create a dictionary?",["Tuple()","Array()","Dictn()","Dict()"],3,"Dict() creates a dictionary in Julia.","Lecture 2, Slide 22"],
+["During data preprocessing, which operation eliminates repeated data through detection, filtering, and compression?",["Data integration","Data cleaning","Redundancy mitigation","Data visualization"],2,"Redundancy mitigation removes repeated data through detection, filtering and compression.","Lecture 3, Slide 10"],
+["Which Hadoop component assigns CPU, memory, and storage resources to applications running on a Hadoop cluster?",["Hadoop Common","Hadoop Distributed File System","MapReduce","Yet Another Resource Negotiator"],3,"YARN (Yet Another Resource Negotiator) allocates CPU, memory and storage.","Lecture 3, Slide 18"],
+["Which of the following is listed as an application of integrating MongoDB with Hadoop?",["Batch aggregation","Physical network cabling","Sensor manufacturing","Firewall configuration"],0,"Batch aggregation is a listed MongoDB and Hadoop use case.","Lecture 3, Slide 24"],
+["Which source-routing protocol is used by the BCube data-center network topology?",["Border Gateway Protocol","BCube Source Routing","Open Shortest Path First","Spanning Tree Protocol"],1,"BCube uses its own BCube Source Routing (BSR).","Lecture 4, Slide 11"],
+["Why may an IIoT-based data center require an increase in inbound network bandwidth?",["IIoT devices generate a bulk amount of small messages containing sensor data","IIoT completely removes the need for data transmission","Sensor data is transmitted only once during deployment","Industrial devices communicate exclusively with one another without a data center"],0,"IIoT devices send huge numbers of small sensor messages, so inbound bandwidth has to grow.","Lecture 4, Slide 21"],
+["Which of the following is an advantage of a Software-Defined Data Centre?",["Static workload management","Permanent coupling of software with hardware","Programmable infrastructure and workload management","Elimination of network virtualization"],2,"An SDDC makes infrastructure programmable and workloads manageable in software.","Lecture 4, Slide 24"],
+["When an SDN forwarding device has insufficient rule capacity, how can two existing flow rules be converted into a single rule?",["By applying wildcard-based rule combination","By disconnecting the SDN controller","By disabling the forwarding device","By changing TCP into UDP"],0,"Two rules can be merged into one using wildcards.","Lecture 5, Slide 7"],
+["How can SDN meet the dynamically changing forwarding requirements of IIoT sensor data?",["By assigning the same priority to every type of data permanently","By using rule-based forwarding policies","By preventing the controller from updating forwarding rules","By transmitting data without considering the real-time situation"],1,"SDN uses rule-based forwarding policies that adapt to what the data needs.","Lecture 5, Slide 14"],
+["Which statement best describes Software-Defined Automation?",["It uses only manually controlled physical equipment","It eliminates real-time control from industrial systems","It uses a virtualized platform for dynamic, real-time system control","It restricts control operations to sensors at Level 0"],2,"Software-Defined Automation runs control on a virtualised platform for dynamic, real-time control.","Lecture 5, Slide 21"]]},
+10:{t:"Software-defined IIoT, trust and security",q:[
+["In Software-Defined 6TiSCH, at which layer is the slicing mechanism proposed to isolate SDN control overhead?",["Physical Layer","Layer 2","Transport Layer","Application Layer"],1,"The slicing mechanism works at Layer 2 to isolate the SDN control overhead.","Lecture 1, Slide 9"],
+["In the adaptive transmission architecture for Software-Defined Edge Computing in IIoT, data streams are divided into which two categories?",["Local and global data streams","Secure and insecure data streams","Ordinary and emergent data streams","Wired and wireless data streams"],2,"Streams are split into ordinary and emergent.","Lecture 1, Slide 11"],
+["According to the challenges and opportunities of Software-Defined IIoT, fog nodes/access devices play an important role in providing which type of service?",["Delay-constrained emergent services","Long-term archival services","Offline batch-processing services","Manual configuration services"],0,"Fog and access devices sit close to the devices, which makes them ideal for delay-constrained emergent services.","Lecture 1, Slide 16"],
+["In a trustworthy IIoT system, which property refers to the ability of the system to function correctly under dynamic adversarial conditions?",["Privacy","Reliability","Safety","Resilience"],3,"Resilience means working correctly under dynamic adversarial conditions. Reliability is about normal operation.","Lecture 2, Slide 4"],
+["In the STRIDE threat model, what does the letter “E” represent?",["Encryption","Elevation of privilege","Exposure of information","Endpoint security"],1,"STRIDE: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege.","Lecture 2, Slide 10"],
+["Which participant in the IIoT trust flow is responsible for designing a cost-efficient trustworthy system, defining trust requirements for components, and conducting tests and certifications?",["System Owner","End User","System Builder","Cloud Service Provider"],2,"The System Builder designs the trustworthy system, sets component trust requirements and runs tests and certifications.","Lecture 2, Slide 19"],
+["Which of the following is suggested as a solution for protecting resource-constrained IIoT end devices?",["Lightweight symmetric key cryptography","Increasing the size of every transmitted packet","Disabling device authentication","Storing all security operations only in the cloud"],0,"Constrained devices need lightweight symmetric key cryptography.","Lecture 3, Slide 7"],
+["Which three states of data are considered under data protection in IIoT?",["Data-at-source, Data-at-cloud, and Data-at-edge","Data-at-Rest, Data-in-Use, and Data-in-Transit","Structured, Semi-structured, and Unstructured data","Sensor data, Control data, and Application data"],1,"Data at rest, data in use and data in transit.","Lecture 3, Slide 11"],
+["Which standard listed under OT security provides guidance for security in Industrial Control Systems?",["ISO 27017","NIST SP 800-82","ISO/IEC 154083","NIST SP 800-144"],1,"NIST SP 800-82 is the guide to industrial control system security.","Lecture 3, Slide 21"],
+["Which of the following is NOT one of the five layers of Hitachi's Lumada IoT platform?",["Edge","Core","Analytics","Transport"],3,"Edge, Core and Analytics are Lumada layers. Transport is not one of them.","Lecture 4, Slide 17"],
+["In the North Star BlueScope Steel smart-factory application, sensors are used to detect which environmental hazards?",["Radiation and toxic gases","Network congestion and packet loss","Inventory shortages and production delays","Voltage fluctuations and cloud failures"],0,"The sensors detect hazards like radiation and toxic gases.","Lecture 4, Slide 21"],
+["What technology does SmartLabel use to provide product-related information such as ingredients, allergens, and nutritional value to consumers?",["RFID tag","Bluetooth beacon","QR code","GPS receiver"],2,"SmartLabel uses QR codes printed on the packaging.","Lecture 5, Slide 11"],
+["In the Intellicup smart beverage-vending solution, what is integrated at the base of the IoT-enabled cup?",["GPS module","NFC chip","Temperature sensor","Wi-Fi router"],1,"Intellicup has an NFC chip in the base of the cup.","Lecture 5, Slide 20"],
+["Which characteristic of a smart factory allows process parameters such as machine configuration, material flow, and temperature control to be optimally adjusted?",["Flexibility","Isolation","Centralization","Redundancy"],0,"Flexibility is what lets those parameters be adjusted optimally.","Prescribed book, Section 7.5.1, page 170"],
+["Which network-security mechanism acts as a fence between a trusted internal network and an unauthorized external network and uses a set of rules to allow or block traffic?",["Hypervisor","Firewall","Load balancer","Data logger"],1,"A firewall is the rule-based fence between trusted and untrusted networks.","Prescribed book, Section 16.3.2, page 310"]]},
+11:{t:"Healthcare, energy, inventory and facilities",q:[
+["What is the correct sequence of stages presented in the IIoT healthcare architecture?",["Sensing → Processing → Sending → Learning → Storing","Sensing → Sending → Processing → Storing → Learning","Sending → Sensing → Storing → Processing → Learning","Sensing → Learning → Processing → Sending → Storing"],1,"Sense the data, send it, process it, store it, then learn from it.","Lectures"],
+["Which parameters are used by the ADAMM Intelligent Asthma Monitoring device to predict pre-symptoms of an asthma attack?",["Blood pressure, glucose level, and oxygen saturation","Body temperature, cough rate, and heart rate","Weight, respiration rate, and blood pressure","Skin temperature, blood glucose, and pulse pressure"],1,"ADAMM tracks body temperature, cough rate and heart rate to spot asthma pre-symptoms.","Lectures"],
+["Which of the following is identified as a challenge in IIoT-based healthcare systems?",["Unlimited computational capability of devices","Excessive on-device memory","Designing scalable algorithms without compromising security","Absence of mobile healthcare devices"],2,"Devices are constrained, so building algorithms that scale without weakening security is a real challenge.","Lectures"],
+["In the IIoT maturity model for power plants, which stage immediately follows optimization?",["Monitor","Control","Autonomy","Device autonomy"],2,"In the maturity model, autonomy comes right after optimization.","Lectures"],
+["Which communication technologies are associated with a Field Area Network in the power-plant communication network?",["Zigbee and 6LoWPAN only","WiMAX, 3G, and 4G for wireless communication and Ethernet for wired communication","Bluetooth and NFC only","RFID and LoRa only"],1,"The Field Area Network uses WiMAX, 3G and 4G wirelessly, plus Ethernet for wired links.","Lectures"],
+["In Advanced Metering Infrastructure (AMI), which component analyzes the data collected from smart meters?",["Meter data acquisition system","Communication network","Meter data management system","Smart meter"],2,"The meter data management system stores and analyses meter data. The acquisition system only collects it.","Lectures"],
+["Which of the following is a function of inventory management?",["Increasing the probability of stock-outs","Protection against stock-outs","Eliminating all order cycles","Increasing production interruptions"],1,"Inventory management protects against stock-outs.","Lectures"],
+["Which statement correctly describes a semi-passive RFID tag?",["It has no battery and obtains all power from the RFID reader","It has an onboard battery and an active transmitter","It has an onboard battery to power the IC but does not have an active transmitter","It continuously broadcasts information as a beacon"],2,"A semi-passive tag's battery powers its chip, but it has no transmitter and replies using the reader's signal.","Lectures"],
+["Which of the following information is included under “comprehensive visibility” provided by RFID-based inventory management?",["Inventory levels, expiration dates, item location, and forecast demand","Employee passwords, salaries, and attendance","Network IP addresses and routing tables only","Machine source code and operating-system files"],0,"Comprehensive visibility covers inventory levels, expiry dates, item location and forecast demand.","Lectures"],
+["In software security, how is availability defined in the lecture?",["Ratio of encrypted packets to total packets","Ratio of time of functioning to the total time","Ratio of authenticated users to total users","Ratio of successful attacks to failed attacks"],1,"Availability is the time the system is functioning divided by the total time.","Lectures"],
+["What is the primary purpose of network segmentation as a network-security technique?",["To combine all network devices into a single unrestricted network","To divide the network into smaller parts and explicitly enforce security policies","To disable encryption between endpoints","To prevent the creation of virtual private networks"],1,"Segmentation splits the network into smaller parts, each with its own enforced security policies.","Lectures"],
+["How does IoT help address the cost barrier in facility management?",["By increasing maintenance activities","By eliminating all installed devices","By increasing operating efficiency and reducing maintenance cost","By preventing the collection of facility data"],2,"IoT raises operating efficiency and cuts maintenance cost, which offsets the upfront cost.","Lectures"],
+["Which of the following is an application of analytics in facility management?",["Determining the exact square-foot utilization of office space","Increasing manual inspection of every facility","Preventing remote monitoring","Eliminating data-driven decision-making"],0,"Analytics can measure exactly how much office space is actually used.","Lectures"],
+["Active RFID tags are classified into which two types?",["Inlays and hard tags","Wet tags and dry tags","Transponders and beacons","Passive and semi-passive tags"],2,"Active tags are transponders (reply when asked) or beacons (broadcast on their own).","Lectures"],
+["Which mobile-device security component can identify attacks in advance and, through cloud-integrated security, help prevent an attack detected on one network branch from spreading to other branches?",["Secure web gateway","RFID reader","Meter data acquisition system","Load balancer"],0,"A secure web gateway spots attacks early and, through the cloud, stops them spreading to other branches.","Lectures"]]}
+};
+WEEKS[12]={t:"Case studies: chemicals, UAVs and mining",unofficial:true,q:[
+["In the oil and gas industry workflow, what happens before data moves to a cloud-based analytics platform?",["Predictive analytics is applied","IoT solutions are deployed at different locations","Data analysis is performed through extraction, transform, and load processes","Required maintenance is identified"],2,"Before reaching the cloud platform, the data goes through ETL (extract, transform, load). Predictive analytics and maintenance decisions come after the cloud stage.","Lectures"],
+["Which of the following is an objective of predictive maintenance using IoT in the chemical industry?",["Increase equipment breakdown","Address real-time issues and reduce equipment breakdown","Eliminate IoT analytics","Replace real-time monitoring with manual inspection"],1,"Predictive maintenance catches issues in real time so equipment breaks down less.","Lectures"],
+["How can IoT improve logistics in the chemical industry?",["By preventing the use of RFID tags","By avoiding warehouse monitoring","By tracking product locations through sensors or RFID tags","By eliminating alert notifications"],2,"Sensors and RFID tags let you track where every product is.","Lectures"],
+["Which elements are monitored in real time to minimize supply-chain risk in the chemical industry?",["Equipment, material, process, environment, and workers","Only equipment and workers","Only material and warehouse location","Customers, competitors, and advertisements"],0,"Supply-chain risk is reduced by watching everything in real time: equipment, material, process, environment and workers.","Lectures"],
+["Which of the following can IoT applications in the pharmaceutical industry help detect while examining drugs?",["Adverse Drug Reactions, effects of pharmaceutical excipients, and allergies","Only production cost","Only equipment temperature","Network routing failures only"],0,"IoT helps detect adverse drug reactions, effects of excipients and allergies while drugs are examined.","Lectures"],
+["Which industrial control system can UAVs communicate with directly in an industrial environment?",["RFID","SCADA","Bluetooth","GPS"],1,"SCADA is the only industrial control system in the list. RFID, Bluetooth and GPS are technologies, not control systems.","Lectures"],
+["Which UAV technology generation introduces improved safety and regulatory features, platform and payload adaptability, intelligent piloting models, full autonomy, and airspace awareness?",["Third Generation","Fourth Generation","Sixth Generation","Second Generation"],2,"Full autonomy and airspace awareness mark the sixth (latest) generation of UAVs.","Lectures"],
+["How can UAVs help optimize inputs in agricultural applications?",["By increasing the use of water and fertilizer regardless of requirement","By optimizing the use of seed, fertilizer, and water","By eliminating crop-health monitoring","By replacing field measurements with manual estimates"],1,"UAV data shows exactly where seed, fertilizer and water are needed, so less is wasted.","Lectures"],
+["Which of the following is an advantage of UAVs for energy-management applications?",["They require workers to climb power poles for every inspection","They can observe miles of transmission lines in a single flight","They cannot inspect wind turbines","They are restricted from monitoring solar panels"],1,"One flight can cover miles of transmission lines, with nobody climbing poles.","Lectures"],
+["Which activity is supported by UAVs in mining applications?",["Regular surface surveys for optimized blast design","Increasing the probability of misfires","Eliminating site exploration","Preventing stockpile management"],0,"Regular UAV surface surveys help design better blasts.","Lectures"],
+["Which healthcare task can be performed using UAVs?",["Delivery of medicines, vaccines, defibrillators, and snake-bite serum","Replacement of all hospital medical equipment","Manufacture of drugs during flight","Elimination of laboratory testing"],0,"Drones deliver medicines, vaccines, defibrillators and snake-bite serum, especially to remote places.","Lectures"],
+["In forestry applications, what can UAV-based remote sensing be used to measure for 3D mapping?",["Carbon storage in biomass","Network bandwidth","Fuel consumption of vehicles","Pharmaceutical production rate"],0,"3D maps of forests let you estimate how much carbon the biomass stores.","Lectures"],
+["Which of the following should be considered while evaluating the transformation of an existing process for Industry 4.0 adoption in a case study?",["Only the purchase cost of sensors","Sensors, actuators, networks, interoperability, automated fault detection and maintenance, and feedback control","Only employee attendance","Elimination of real-time and non-real-time data analysis"],1,"A real Industry 4.0 transformation looks at the whole system: sensors, actuators, networks, interoperability, automated fault detection and maintenance, and feedback control.","Lectures"],
+["Which communication technology was used by Transco Industries to monitor conveyor-belt systems in its mining-industry IIoT implementation?",["Bluetooth and Zigbee","Semtech LoRa devices and LoRaWAN","Wi-Fi and NFC","Ethernet and RFID"],1,"Transco used Semtech LoRa devices with LoRaWAN, which suits long-range, low-power monitoring across a mine.","Lectures"],
+["What was one major benefit obtained from the IIoT-based monitoring of conveyor-belt systems in the mining-industry case study?",["Increased dependence on manual inspection","Increased maintenance cost","Ability to obtain a holistic view of the conveyor-belt line and localize defects","Elimination of all sensor data"],2,"Monitoring gave a holistic view of the whole conveyor line and pinpointed where defects were.","Lectures"]]};
+const UPCOMING = {};
+const VOICE = {
+  accent:"#2f5fd0",
+  greet:{
+    morning:["Good morning{n}! Brains are freshest before the first reel.","Morning{n}! Coffee first, then let's make today count.","Rise and shine{n}. Mostly rise.","Good morning{n}. The early learner gets the marks."],
+    afternoon:["Good afternoon{n}! Post-lunch sleepiness is not invited.","Hello{n}! Quick round before the nap attacks?","Afternoon{n}! Let's keep that brain awake.","Hey{n}! Fifteen minutes now, bragging rights forever."],
+    evening:["Good evening{n}! One week before dinner?","Evening{n}! Let's end the day a little smarter.","Hey{n}! Evening study session? Look at you being responsible.","Good evening{n}. Practise now, flex later."],
+    night:["It's late{n}. A short round, then sleep. Your brain needs it.","Night owl{n}? Respect. Don't forget to sleep, though.","Burning the midnight oil{n}? Keep it short.","Late-night learner{n}. Five questions, then bed. Deal?"]
+  },
+  gen:{
+    mix:[["Fun fact:","Reminder:","Breaking news:","Plot twist:","Quick boost:","Real talk:","Today's mood:","Hot take:","Pro tip:","Life update:","Science says:","Okay, listen:"],
+      ["Your phone will survive 15 minutes without you. Probably.","The syllabus won't finish itself. I checked.","Ten minutes here beats two hours of ‘I'll start tomorrow’.","You're one quiz away from feeling like a genius.","Even Zigbee needs a coordinator. Be your own today.","Snacks taste better after finishing a week.","Your future self is already proud. Don't let them down.","Cramming at 2 am is not a personality.","Every expert was once a confused beginner with too many tabs open.","Mistakes here are free. Mistakes in the exam cost marks.","You're smarter than your last-minute panic suggests.","The certificate looks great on LinkedIn. Just saying.","Your brain is a muscle. This is leg day.","Consistency beats talent when talent is busy scrolling.","Somewhere, a sensor is working harder than you. Let's fix that.","The answer key is rooting for you.","You didn't come this far to only come this far.","Small steps, big marks.","Even the slowest LoRa packet gets there eventually. So will you.","One week a day keeps the exam panic away.","You plus 15 minutes of focus equals unstoppable.","The best time to start was yesterday. The next best is now. Not after the snack. Now.","Reading the explanation counts as studying. You're welcome.","Your attendance might be 75%, but your effort can be 100%.","Learning IIoT today, building smart factories tomorrow. Okay, the day after.","You're doing better than you think. Your notes, however, need help.","Progress is progress, even at SIGFOX speed.","Teachers practise here too, so you're in great company.","Engineers don't quit. They debug.","No negative marks means guessing is basically free.","Today's effort is tomorrow's ‘I already know this’.","The canteen will still be there in 15 minutes. Promise.","Industry 4.0 is waiting for you. No pressure. Some pressure.","Your brain called. It wants a workout, not another reel.","Be the topper you want to see in the class group.","Read slowly. The question isn't going anywhere.","Coffee, focus, done. In that order.","Hard concepts get easier the second time. And the third.","You've survived internals. This is nothing.","A little practice every day turns ‘what?’ into ‘obviously’.","You're more ready than your panic thinks.","Somebody has to top this. Why not you?","Rest is allowed. Quitting is not.","Your future boss will love that you know what MQTT is.","Smile. You're literally getting smarter right now."]],
+    right:[["Correct!","Boom!","Yes!","Look at you!","Spot on!","Nailed it!","Excellent!","Well done!","Right answer!","Brilliant!","Superb!","Exactly!","You got it!","Perfect!","Ooh, nice!","Correct again!"],
+      ["Your brain is on fire today. Not literally, hopefully.","Somebody's been paying attention in class.","Topper energy detected.","Put that on the fridge.","Your future self just high-fived you.","That's how it's done.","The answer key is impressed.","Keep this up and the exam doesn't stand a chance.","Big brain moment.","Smarter than the average sensor.","Smooth, like CoAP over UDP.","You make this look easy. Rude, but impressive.","Confidence level: rising.","Another one for the highlight reel.","Exactly-once delivery. QoS 2 behaviour.","Your hard work is showing. Keep going.","One step closer to that certificate.","Your brain cells are throwing a party.","Pure skill. No luck involved. Probably.","Okay genius, save some marks for the rest of us.","That's a concept locked in forever.","You clearly read the slides. Respect.","The question never stood a chance.","Keep stacking these up.","Gold star for you.","Proud of you. Genuinely.","That's the spirit.","Somebody give this person a certificate already.","Your notes would be jealous."]],
+    wrong:[["Oops!","Not quite.","Almost!","Close one.","Plot twist: no.","Nope.","Not this time.","Oh no!","So close!","Hmm, not this one.","Wrong, but brave.","Whoops!","Nice try.","Not yet."],
+      ["That option was a trap, and you walked right in. Happens.","Read the why. It's short, I promise.","Mistakes here are free. Collect them now, not in the exam.","Even toppers fall for that one.","Your confidence was strong. The answer, less so.","Now you'll never forget this one.","Shake it off. Next question's yours.","That's what practice is for.","Did you read the whole question, or just the vibes?","Your brain buffered for a second. It's fine.","Packet lost. Retransmit next time.","Learning is happening right now. You can't see it, but it is.","Don't worry, the answer key won't tell anyone.","Every expert has a blooper reel. Welcome.","Wrong here, right in the exam. That's the deal.","The highlighted answer is your new best friend.","Take a breath. You're doing fine.","Bold choice. Not the right one, but bold.","No negative marks, no stress. Keep going.","That one fools almost everyone.","Slow down. The question isn't running away.","Read the explanation and it'll stick.","You'll get it in the retry. Guaranteed-ish.","Growth unlocked.","Even Wi-Fi drops sometimes. Reconnect and continue.","You're closer than you think.","Don't be hard on yourself. Be hard on the question.","Mark this topic for a quick revision.","Wrong answer, right attitude. Keep going.","Your future self will laugh about this one."]]
+  },
+  tips:["Read the whole question before looking at the options.","No negative marking, so never leave a question blank.","Watch for ‘NOT’ in the question. It's sneaky.","Cross out the obviously silly options first.","‘All of the above’ is right more often than you'd think in this course.","Options with ‘only’ or ‘always’ are often traps.","Stuck between two options? The small words decide it.","Data rates and bit sizes love to show up. Note them down.","Stuck? Mark it for review and move on. Don't marry one question.","Trust your first instinct, then double-check.","Link each answer to a lecture or slide you remember.","Take a short break every 25 minutes. Snacks are allowed.","Drink some water. Your brain is mostly water and good intentions.","Explain a concept aloud. If you can teach it, you know it.","Review your wrong answers within a day.","Mixed-week practice is the best exam rehearsal.","Phone face down. It'll survive.","Protocols come up a lot. Make a quick comparison table.","Who made what: Predix is GE, MindSphere is Siemens, Lumada is Hitachi.","MQTT QoS: 0 is at most once, 1 at least once, 2 exactly once.","Sensors sense, processors decide, actuators act.","Analytics: descriptive is what, diagnostic is why, predictive is what next, prescriptive is what to do.","Study with a friend and quiz each other. Loser buys tea.","Sleep before the exam beats one more hour of panic revision.","Read the explanation even when you get it right.","Slow is smooth, and smooth is fast.","Halfway there. Keep the pace steady.","Breathe. It's practice, not a viva.","Your posture is judging you. Sit up.","If you're reading this instead of the question, go back to the question.","Teachers: a random test makes a great quick class quiz.","Students: one week a day and you're done in two weeks."],
+  ps:["Thought for today: consistency beats cramming. Every single time.","Thought for today: you're one good habit away from topper mode.","Thought for today: rest is productive. Doom-scrolling is not.","Thought for today: ask the doubt. Everyone else has it too.","Thought for today: small progress still counts.","Thought for today: be proud of how far you've come.","Thought for today: curiosity is a superpower. Use it.","Thought for today: learning together is more fun. Share this site.","Thought for today: drink water. Seriously.","Thought for today: you belong in this field.","Thought for today: today's practice is tomorrow's ‘easy question’.","Thought for today: exams are scared of prepared people."],
+  setup:["Pick a week. Any week. Just not ‘tomorrow’.","Choose a week, or mix them up if you're feeling brave.","Week 0 is a gentle warm-up. Week 12 is for the brave.","Pick one and let's go. The syllabus isn't getting shorter."],
+  timer:["One minute left! No negative marks, so attempt everything.","Sixty seconds. Panic gracefully.","Final minute. Trust your gut, it's been studying too.","Clock's almost out. Guess the rest, it's free."],
+  confirm:["Whatever the score, the review will make you smarter.","Brave! Let's see the results.","Ready? The results are slightly nervous too.","Submitting? Let's see what you've got."],
+  review:["Read the explanations. This is where the real magic happens.","Every why you read is a mark saved in the exam.","Go through these. Future you says thanks.","Mistakes reviewed today are marks earned tomorrow."],
+  empty:["No tests yet. The quiz is getting lonely.","Your progress will show up here. It's waiting patiently.","Zero tests so far. Week 0 is a gentle place to start."],
+  sugNew:["Week {w} hasn't met you yet. Go say hi.","Week {w} is next. It's friendlier than it looks.","You haven't tried Week {w}. It's feeling left out."],
+  sugLow:["Week {w} is your lowest at {b}%. One focused round and it's sorted.","Week {w} is at {b}%. It's asking for a rematch.","Week {w} sits at {b}%. Show it who's boss."],
+  res:{
+    top:[["Outstanding{n}!","Topper energy. Screenshot this and send it to the class group."],["Absolute legend{n}!","The exam should be scared of you right now."],["Brilliant{n}!","Your brain deserves a snack. A big one."]],
+    good:[["Great job{n}!","So close to perfect. Retry the few you missed and finish the job."],["Well done{n}!","Strong score. A quick look at the explanations and you're unstoppable."],["Nice work{n}!","You're on track. Keep this energy."]],
+    mid:[["Good effort{n}.","Halfway there. Retry the missed ones while they're still fresh."],["Not bad{n}!","Read the whys and the next round will feel way easier."],["Getting there{n}!","Every retry pushes the score up. Go again?"]],
+    low:[["Rough round{n}, but hey, you showed up.","That's half the battle. Read the explanations and try again."],["Okay, that happened{n}.","Practice is exactly where mistakes belong. Retry when you're ready."],["Don't worry{n}.","Even legends start with low scores. Review, breathe, retry."]],
+    blank:[["Zero answers{n}? Bold strategy.","No negative marking, so every guess helps. Give it a go."],["The questions felt ignored{n}.","Try attempting every one next time. You've got nothing to lose."]]
+  },
+  perfect:["Perfect score! Frame it. Seriously.","Full marks! Your brain deserves a holiday.","100%! Okay, show-off. We're proud."],
+  tiles:{ok:"look at you go",bad:"free lessons",skip:"left on read",time:"well spent"},
+  credit:"Made with ♥ by the HOD, Department of IT ✨",
+  footQuips:["Approved by the HOD. Snacks not included.","Warning: may cause sudden intelligence.","Side effects include topping the class.","No students were harmed in the making of this quiz.","Powered by chai, curiosity and the IT department."]
+};
+let userName=""; try{userName=localStorage.getItem("iiot-dept-name")||"";}catch(e){}
+const nm=s=>String(s).replace(/\{n\}/g,userName?", "+userName:"");
+const me=()=>Object.assign({},VOICE,{name:userName});
+
+/* ---------- no-repeat decks ---------- */
+const POOLS={learner:{}};
+Object.keys(VOICE.gen).forEach(cat=>{const [A,B]=VOICE.gen[cat];const out=[];A.forEach(a=>B.forEach(b=>out.push(a+" "+(/[.?!]$/.test(a)?b.charAt(0).toUpperCase()+b.slice(1):b))));POOLS.learner[cat]=out;});
+POOLS.learner.tips=VOICE.tips.slice(); POOLS.learner.ps=VOICE.ps.slice();
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function perm(n,seed){const r=rng(seed),a=[...Array(n).keys()];for(let i=n-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+const DECKMEM={};
+function deck(cat){
+  const pool=POOLS.learner[cat]; const key="iiot-dept-deck-"+cat;
+  let st=DECKMEM[key]; if(!st){try{st=JSON.parse(localStorage.getItem(key)||"null");}catch(e){st=null;}}
+  if(!st||st.n!==pool.length||st.i>=pool.length) st={seed:Math.floor(Math.random()*2e9),i:0,n:pool.length};
+  const text=pool[perm(pool.length,st.seed)[st.i]]; st.i++; DECKMEM[key]=st;
+  try{localStorage.setItem(key,JSON.stringify(st));}catch(e){}
+  return text;
+}
+const once=(k,f)=>(k in S.c)?S.c[k]:(S.c[k]=f());
+
+/* ---------- data ---------- */
+const ALL=[]; const BY={};
+Object.keys(WEEKS).forEach(w=>{
+  WEEKS[w].q.forEach((x,i)=>{
+    const q={id:`w${w}q${i+1}`,week:+w,n:i+1,text:x[0],opts:x[1],ans:x[2],why:x[3],ref:x[4],fig:!!x[5],uk:!!WEEKS[w].unofficial};
+    ALL.push(q); BY[q.id]=q;
+  });
+});
+const WEEK_NUMS=Object.keys(WEEKS).map(Number);
+
+/* ---------- storage ---------- */
+const KEY=p=>"iiot-dept-v1-"+p;
+function load(p){
+  try{const v=localStorage.getItem(KEY(p)); if(v){const d=JSON.parse(v); d.attempts=d.attempts||[]; d.best=d.best||{}; return d;}}catch(e){}
+  return {attempts:[],best:{},last:null};
+}
+function save(p,d){try{localStorage.setItem(KEY(p),JSON.stringify(d));}catch(e){}}
+
+/* ---------- helpers ---------- */
+const $app=document.getElementById("app");
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+const mmss=s=>String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+function dur(s){if(s<60)return s+"s";const m=Math.floor(s/60),r=s%60;return r?`${m}m ${r}s`:`${m}m`;}
+const L="abcd";
+function slot(){const h=new Date().getHours();return h<5?"night":h<12?"morning":h<17?"afternoon":h<21?"evening":"night";}
+function pillFor(p){return p>=70?"ok":p>=40?"mid":"bad";}
+function whenStr(t){const d=new Date(t);return d.toLocaleDateString(undefined,{day:"numeric",month:"short"})+", "+d.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});}
+
+/* ---------- theme ---------- */
+try{const t=localStorage.getItem("iiot-dept-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}
+function isDark(){return document.documentElement.dataset.theme==="dark";}
+
+/* ---------- install (PWA) ---------- */
+let installEvt=null;
+const inFrame=(()=>{try{return window.self!==window.top;}catch(e){return true;}})();
+const isStandalone=()=>(window.matchMedia&&matchMedia("(display-mode: standalone)").matches)||navigator.standalone===true;
+const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();installEvt=e;render();});
+window.addEventListener("appinstalled",()=>{installEvt=null;render();});
+if("serviceWorker" in navigator&&/^https?:$/.test(location.protocol)&&!inFrame){window.addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").catch(()=>{});});}
+function vInstall(){
+  if(inFrame||isStandalone()||S.hideInstall) return "";
+  if(!installEvt&&!isIOS) return "";
+    const body=installEvt
+    ?`<button class="btn primary" data-act="install">Install the app</button>`
+    :`<p class="small" style="margin:6px 0 0">On iPhone: tap <b>Share</b> <span aria-hidden="true">⬆︎</span>, then <b>Add to Home Screen</b>.</p>`;
+  return `<div class="install"><img src="icons/icon-192.png" alt="" width="44" height="44" onerror="this.remove()"><div class="grow"><b>Install the IIoT Practice Room</b><p class="small muted" style="margin:2px 0 0">Opens like an app, full screen, and works offline after the first visit.</p>${body}</div><button class="link" data-act="hideInstall">Not now</button></div>`;
+}
+
+/* ---------- state ---------- */
+const S={c:{},bubble:null,person:(()=>{try{return localStorage.getItem("iiot-dept-started")?"learner":null;}catch(e){return null;}})(),screen:"pick",setup:{type:"week",weeks:[0],count:15,study:false},exam:null,result:null,filter:"all",lineIdx:null,confirm:false,timer:null,clearArm:false};
+
+function go(screen){S.screen=screen;S.clearArm=false;S.c={};S.bubble=null;render();window.scrollTo(0,0);}
+
+/* ---------- views ---------- */
+function vHeader(){
+  const crumbs={pick:"Welcome",home:"Home",setup:"Set up your practice",exam:"Practice in progress",result:"Your result"};
+  return `<header class="band"><div class="band-in">
+    <svg viewBox="0 0 512 512" class="logo" aria-hidden="true">
+<defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6fe0"/><stop offset="1" stop-color="#8b6fd6"/></linearGradient></defs>
+<rect width="512" height="512" rx="116" fill="url(#lg)"/>
+<g transform="translate(256 256) scale(1) translate(-256 -256)">
+ <g fill="#ffffff"><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(0 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(45 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(90 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(135 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(180 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(225 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(270 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(315 256 256)"/><circle cx="256" cy="256" r="140"/></g>
+ <circle cx="208" cy="246" r="17" fill="#1b2340"/><circle cx="304" cy="246" r="17" fill="#1b2340"/>
+ <circle cx="214" cy="240" r="6" fill="#fff"/><circle cx="310" cy="240" r="6" fill="#fff"/>
+ <ellipse cx="180" cy="290" rx="20" ry="12" fill="#ff8fb3" opacity=".75"/><ellipse cx="332" cy="290" rx="20" ry="12" fill="#ff8fb3" opacity=".75"/>
+ <path d="M232 292 q24 26 48 0" fill="none" stroke="#1b2340" stroke-width="11" stroke-linecap="round"/>
+ <path d="M392 128c-14-10-22-17-22-27a12 12 0 0 1 22-6 12 12 0 0 1 22 6c0 10-8 17-22 27z" fill="#ff5c93" stroke="#fff" stroke-width="5" transform="translate(6 -14) scale(1.5) translate(-130 -40)"/>
+</g></svg>
+    <div class="brand"><b>IIoT Practice Room</b><span>Department of IT, FXEC</span></div>
+    <span class="crumb">${crumbs[S.screen]}</span>
+    <button class="switch" data-act="theme" aria-label="Switch to ${isDark()?"light":"dark"} theme">${isDark()?"☀<span class=\"tl\"> Light</span>":"☾<span class=\"tl\"> Dark</span>"}</button>
+  </div></header>`;
+}
+
+function vPick(){
+  return `<main class="wrap"><section class="welcome">
+    <svg viewBox="0 0 512 512" class="biglogo" aria-hidden="true">
+<defs><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6fe0"/><stop offset="1" stop-color="#8b6fd6"/></linearGradient></defs>
+<rect width="512" height="512" rx="116" fill="url(#lg2)"/>
+<g transform="translate(256 256) scale(1) translate(-256 -256)">
+ <g fill="#ffffff"><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(0 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(45 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(90 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(135 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(180 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(225 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(270 256 256)"/><rect x="221" y="88" width="70" height="60" rx="14" transform="rotate(315 256 256)"/><circle cx="256" cy="256" r="140"/></g>
+ <circle cx="208" cy="246" r="17" fill="#1b2340"/><circle cx="304" cy="246" r="17" fill="#1b2340"/>
+ <circle cx="214" cy="240" r="6" fill="#fff"/><circle cx="310" cy="240" r="6" fill="#fff"/>
+ <ellipse cx="180" cy="290" rx="20" ry="12" fill="#ff8fb3" opacity=".75"/><ellipse cx="332" cy="290" rx="20" ry="12" fill="#ff8fb3" opacity=".75"/>
+ <path d="M232 292 q24 26 48 0" fill="none" stroke="#1b2340" stroke-width="11" stroke-linecap="round"/>
+ <path d="M392 128c-14-10-22-17-22-27a12 12 0 0 1 22-6 12 12 0 0 1 22 6c0 10-8 17-22 27z" fill="#ff5c93" stroke="#fff" stroke-width="5" transform="translate(6 -14) scale(1.5) translate(-130 -40)"/>
+</g></svg>
+    <h1>Welcome to the IIoT Practice Room</h1>
+    <p class="lede">Free practice for the NPTEL course <b>Introduction to Industry 4.0 and Industrial Internet of Things</b>. 195 questions from Weeks 0 to 12, with an explanation for every answer. Open to every teacher and student of the Department of Information Technology.</p>
+    <label class="namebox"><span>What should we call you? <em>(optional)</em></span>
+      <input id="nameIn" type="text" maxlength="24" autocomplete="given-name" placeholder="Your first name" value="${esc(userName)}"></label>
+    <div class="row"><button class="btn primary" data-act="begin">Let's begin</button><button class="btn ghost" data-act="skipName">Skip, keep me anonymous</button></div>
+    <p class="small muted">No login, no sign-up. Your name and progress stay only on this device.</p>
+  </section>${vInstall()}</main>`;
+}
+
+function vHome(){
+  const p=me(), d=load(S.person), n=d.attempts.length;
+  const title=n?(userName?`Welcome back, ${userName}`:"Welcome back"):(userName?`Hi ${userName}`:"Hi there");
+  let prog;
+  if(!n){prog=`<p class="muted">${esc(once("empty",()=>pick(p.empty)))}</p>`;}
+  else{
+    const best=Math.max(...d.attempts.map(a=>a.pct));
+    const recent=d.attempts.slice(0,5);const avg=Math.round(recent.reduce((s,a)=>s+a.pct,0)/recent.length);
+    let sw=WEEK_NUMS.find(w=>d.best[w]==null), sb=null;
+    if(sw==null){sw=WEEK_NUMS.reduce((m,w)=>d.best[w]<d.best[m]?w:m,WEEK_NUMS[0]);sb=d.best[sw];}
+    prog=`<div class="stats"><div class="stat"><b>${n}</b><span>Practice tests</span></div><div class="stat"><b>${best}%</b><span>Best score</span></div><div class="stat"><b>${avg}%</b><span>Recent average</span></div></div>
+    <div class="suggest"><b>Suggested next: Week ${sw}</b><p>${esc(once("sug",()=>pick(sb==null?p.sugNew:p.sugLow)).replace("{w}",sw).replace("{b}",sb))}</p><button class="btn primary" data-act="quickWeek" data-w="${sw}">Practise Week ${sw}</button></div>`;
+  }
+  const rows=d.attempts.slice(0,8).map(a=>`<tr><td>${whenStr(a.date)}</td><td>${esc(a.label)}</td><td class="num">${a.c}/${a.n} <span class="pill ${pillFor(a.pct)}">${a.pct}%</span></td><td class="num">${a.w}</td><td class="num">${a.s}</td><td class="num">${dur(a.secs)}</td></tr>`).join("");
+  return `<main class="wrap">
+    <section class="hero"><p class="hello">${esc(once("greet",()=>nm(pick(p.greet[slot()]))))}</p><h1>${esc(title)}</h1>
+      <p class="line">${esc(once("line",()=>deck("mix")))}</p>
+      <div class="actions"><button class="btn" style="background:#fff;color:var(--accent);border:0" data-act="toSetup">Start practising</button><button class="btn light" data-act="nextLine">Another thought</button></div></section><p class="small muted" style="margin:10px 4px 0">${userName?`Not ${esc(userName)}? `:""}<button class="link" data-act="rename">${userName?"Change name":"Add your name"}</button></p>
+    ${d.last?`<div class="lastbar"><span><b>Your last practice is finished.</b> <span class="muted">${esc(d.last.label)}, ${d.last.c}/${d.last.n}</span></span><button class="link" data-act="seeResult">See the result</button></div>`:""}
+    <div class="grid2">
+      <section><h2 class="sec-title">Your course</h2>
+        <div class="panel course"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div>
+        <div><h3>Introduction to Industry 4.0 and IIoT</h3><p>${ALL.length} questions from all 13 NPTEL assignments (Weeks 0 to 12). 1 mark each, no negative marking.</p>
+        <button class="btn primary" data-act="toSetup">Choose a week</button></div></div></section>
+      <section><h2 class="sec-title">Your progress</h2><div class="panel">${prog}</div></section>
+    </div>
+    <p class="ps">${esc(once("ps",()=>deck("ps")))}</p>${vInstall()}
+    ${n?`<section style="margin-top:22px"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><h2 class="sec-title">Recent attempts</h2><button class="link" data-act="clearHist">${S.clearArm?"Tap again to clear everything":"Clear history"}</button></div>
+      <div class="panel tablewrap" style="padding:6px 14px"><table><thead><tr><th>When</th><th>Practice</th><th class="num">Score</th><th class="num">Wrong</th><th class="num">Skipped</th><th class="num">Time</th></tr></thead><tbody>${rows}</tbody></table></div></section>`:""}
+  </main>`;
+}
+
+function selectionIds(){
+  const st=S.setup;
+  if(st.type==="week") return WEEKS[st.weeks[0]].q.map((_,i)=>`w${st.weeks[0]}q${i+1}`);
+  let pool = st.type==="random" ? ALL.map(q=>q.id) : ALL.filter(q=>st.weeks.includes(q.week)).map(q=>q.id);
+  return shuffle(pool).slice(0,Math.min(st.count,pool.length));
+}
+function setupInfo(){
+  const st=S.setup; let covers,count,ok=true;
+  if(st.type==="week"){covers=`Week ${st.weeks[0]}`;count=WEEKS[st.weeks[0]].q.length;}
+  else if(st.type==="mixed"){const ws=st.weeks.slice().sort((a,b)=>a-b);covers=ws.length?"Weeks "+ws.join(", "):"Pick weeks";const pool=ALL.filter(q=>ws.includes(q.week)).length;count=Math.min(st.count,pool);ok=ws.length>=2;}
+  else{covers="All weeks";count=st.count;}
+  return {covers,count,ok,time:st.study?"No timer":`${count} min`};
+}
+function vSetup(){
+  const st=S.setup, d=load(S.person), info=setupInfo();
+  const typeBtn=(v,t,s)=>`<button class="choice" aria-pressed="${st.type===v}" data-act="type" data-v="${v}"><b>${t}</b><span>${s}</span></button>`;
+  const weekCards=WEEK_NUMS.map(w=>`<button class="wk" aria-pressed="${st.weeks.includes(w)}" data-act="week" data-w="${w}"><span class="wtop"><b>Week ${w}</b><span class="tag">15 Q</span></span><span class="wt">${esc(WEEKS[w].t)}</span>${d.best[w]!=null?`<span class="wbest">Best ${d.best[w]}%</span>`:""}</button>`).join("")
+    + Object.keys(UPCOMING).map(w=>`<button class="wk" disabled><span class="wtop"><b>Week ${w}</b></span><span class="wt">Coming soon</span></button>`).join("");
+  const counts=[10,15,20,30].map(c=>`<button class="cnt" aria-pressed="${st.count===c}" data-act="count" data-v="${c}">${c}</button>`).join("");
+  return `<main class="wrap"><h1 class="page-title">Set up your practice</h1><p class="page-sub">Multiple choice, 1 mark per question, no negative marking.<br><span class="bit">${esc(once("setup",()=>pick(me().setup)))}</span></p>
+  <div class="setup-grid"><div>
+    <div class="step"><h2>1. Practice type</h2><div class="choices">
+      ${typeBtn("week","Week-wise","One week at a time, like the weekly assignment.")}
+      ${typeBtn("mixed","Mixed weeks","Pick two or more weeks and get a mix.")}
+      ${typeBtn("random","Random","Questions drawn from every week.")}</div></div>
+    ${st.type!=="random"?`<div class="step"><h2>2. ${st.type==="week"?"Choose a week":"Choose your weeks"}</h2><div class="weeks">${weekCards}</div></div>`:""}
+    ${st.type!=="week"?`<div class="step"><h2>${st.type==="random"?"2":"3"}. How many questions?</h2><div class="counts">${counts}</div></div>`:""}
+    <div class="step"><h2>${st.type==="week"?"3":st.type==="random"?"3":"4"}. Mode</h2><div class="choices two">
+      <button class="choice" aria-pressed="${!st.study}" data-act="mode" data-v="exam"><b>Exam mode</b><span>Timed, like NPTEL. Answers and commentary at the end.</span></button>
+      <button class="choice" aria-pressed="${st.study}" data-act="mode" data-v="study"><b>Study mode</b><span>No timer. See the answer and get roasted (or praised) right away.</span></button></div></div>
+  </div>
+  <aside class="panel summary"><h2>Your practice</h2><dl>
+    <dt>Course</dt><dd>Industry 4.0 and IIoT</dd>
+    <dt>Type</dt><dd>${st.type==="week"?"Week-wise":st.type==="mixed"?"Mixed weeks":"Random"}</dd>
+    <dt>Covers</dt><dd>${esc(info.covers)}</dd>
+    <dt>Questions</dt><dd>${info.count}</dd>
+    <dt>Time</dt><dd>${info.time}</dd>
+    <dt>Mode</dt><dd>${st.study?"Study":"Exam"}</dd></dl>
+    <button class="btn primary" data-act="start" ${info.ok?"":"disabled"}>Start practice</button>
+    ${info.ok?"":`<p class="hint">Pick at least two weeks for a mixed practice.</p>`}
+    <button class="btn ghost" data-act="home">Back</button></aside></div></main>`;
+}
+
+function noteHTML(q){return q.uk?`<p class="ukey">No official answer key was shown for this week, so this answer was worked out separately. Double-check it against the slides.</p>`:"";}
+function figHTML(){
+  return `<div class="fig" role="img" aria-label="Diagram: input signal to sensor, to an unknown block, to actuator, to output signal"><span class="fs">Input signal</span><span class="fa"></span><span class="fb">Sensor</span><span class="fa"></span><span class="fb q">?</span><span class="fa"></span><span class="fb">Actuator</span><span class="fa"></span><span class="fs">Output signal</span></div>
+  <p class="figcap">The sensor and the ? block make up the transducer's input side. The ? block and the actuator make up its output side.</p>`;
+}
+
+function vExam(){
+  const ex=S.exam, i=ex.idx, q=BY[ex.ids[i]], a=ex.ans[i], n=ex.ids.length;
+  const answered=ex.ans.filter(x=>x!==null).length;
+  const locked=ex.study&&a!==null;
+  const opts=q.opts.map((o,k)=>{
+    let cls="opt",mark="";
+    if(locked){ if(k===q.ans){cls+=" right";mark="Correct answer";} else if(k===a){cls+=" wrong";mark="Your answer";} }
+    else if(a===k) cls+=" sel";
+    return `<button class="${cls}" role="radio" aria-checked="${a===k}" data-act="opt" data-i="${k}" ${locked?"disabled":""}><span class="ol">${L[k]}.</span><span class="od">${esc(o)}</span>${mark?`<span class="om">${mark}</span>`:""}</button>`;
+  }).join("");
+  let fb="";
+  if(locked){const ok=a===q.ans;
+    fb=`<div class="feedback ${ok?"ok":"bad"}" aria-live="polite"><p class="quip">${esc(ex.quip[i])}</p><p><b>Why:</b> ${esc(q.why)}</p><p class="ref">From Week ${q.week}: ${esc(q.ref)}</p>${noteHTML(q)}</div>`;}
+  const pal=ex.ids.map((id,k)=>{
+    let c="pb";const ans=ex.ans[k]!==null, mk=ex.marked[k];
+    if(ex.study&&ans) c+= ex.ans[k]===BY[id].ans?" ans":" wr";
+    else if(ans&&mk) c+=" ansmk"; else if(mk) c+=" mk"; else if(ans) c+=" ans";
+    if(k===i) c+=" cur";
+    return `<button class="${c}" data-act="nav" data-i="${k}" aria-label="Question ${k+1}">${k+1}</button>`;}).join("");
+  const legend=ex.study
+    ?`<li><i style="background:var(--ok);border-color:var(--ok)"></i>Correct</li><li><i style="background:var(--bad);border-color:var(--bad)"></i>Wrong</li><li><i></i>Not answered yet</li>`
+    :`<li><i style="background:var(--ok);border-color:var(--ok)"></i>Answered</li><li><i></i>Not answered</li><li><i style="background:var(--mark);border-color:var(--mark)"></i>Marked for review</li><li><i style="background:var(--mark);border-color:var(--mark);box-shadow:inset 0 0 0 2px var(--ok)"></i>Answered and marked</li>`;
+  const left=ex.limit?Math.max(0,ex.limit-Math.floor((Date.now()-ex.start)/1000)):0;
+  return `<main class="wrap">
+    <div class="panel exam-top"><div><h1>${esc(ex.label)}</h1><span class="muted small">${answered} of ${n} answered</span><span class="bit tmsg" id="tmsg">${ex.limit&&left<=60?esc(ex.tmsg||(ex.tmsg=pick(me().timer))):""}</span></div>
+      <div style="display:flex;gap:10px;align-items:center">${ex.limit?`<div class="timer ${left<=60?"low":""}"><small>Time left</small><b id="tleft">${mmss(left)}</b></div>`:""}<button class="btn primary" data-act="submit">${ex.study?"Finish":"Submit"}</button></div></div>
+    <div class="exam-grid"><section class="panel">
+      <div class="qhead"><h2>Question ${i+1} <span class="muted" style="font-weight:500">of ${n}</span></h2><span class="tag">Week ${q.week}</span></div>
+      <p class="qtext">${esc(q.text)}</p>${q.fig?figHTML():""}
+      <div class="opts" role="radiogroup">${opts}</div>${fb}
+      <div class="qnav">
+        <button class="btn" data-act="prev" ${i===0?"disabled":""}>Previous</button>
+        ${ex.study?"":`<button class="btn" data-act="mark">${ex.marked[i]?"Unmark":"Mark for review"}</button><button class="btn ghost" data-act="clear" ${a===null?"disabled":""}>Clear response</button>`}
+        <span class="grow"></span>
+        <button class="btn primary" data-act="next">${i===n-1?(ex.study?"Finish":"Save and submit"):(ex.study?"Next":"Save and next")}</button>
+      </div>
+      <p class="keys">Shortcuts: <kbd>a</kbd>–<kbd>d</kbd> pick an option, <kbd>←</kbd> <kbd>→</kbd> move${ex.study?"":", <kbd>m</kbd> mark"}</p>
+    </section>
+    <aside class="panel palette"><h2>Question palette</h2><div class="pal">${pal}</div><ul class="legend">${legend}</ul><p class="pnote"><b>Tip:</b> ${esc(ex.tip[i]||(ex.tip[i]=deck("tips")))}</p></aside></div></main>`;
+}
+
+function vConfirm(){
+  const ex=S.exam, n=ex.ids.length, ans=ex.ans.filter(x=>x!==null).length, mk=ex.marked.filter(Boolean).length;
+  return `<div class="scrim"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><h2 id="mt">${ex.study?"Finish this practice?":"Submit your practice?"}</h2>
+    <ul><li><b>${ans}</b> answered</li><li><b>${n-ans}</b> not answered</li>${ex.study?"":`<li><b>${mk}</b> marked for review</li>`}</ul>
+    <p class="muted small">Unanswered questions score 0. You can't change answers after this.</p><p class="bit">${esc(once("confirm",()=>pick(me().confirm)))}</p>
+    <div class="row"><button class="btn" data-act="keep">Keep working</button><button class="btn primary" data-act="confirmSubmit">${ex.study?"Finish":"Submit"}</button></div></div></div>`;
+}
+
+function bracket(r){if(r.c+r.w===0)return"blank";return r.pct>=90?"top":r.pct>=70?"good":r.pct>=40?"mid":"low";}
+function vResult(){
+  const r=S.result, p=me(), b=once("res",()=>pick(p.res[bracket(r)]));
+  const C=2*Math.PI*52, off=C*(1-r.pct/100);
+  const missed=r.ids.filter((id,k)=>r.ans[k]!==BY[id].ans).length;
+  const stood=[];
+  if(r.pct===100) stood.push(once("perfect",()=>pick(p.perfect)));
+  if(r.s>0) stood.push(`${r.s} question${r.s>1?"s were":" was"} left blank. There's no negative marking, so an educated guess can only help.`);
+  if(r.weeks.length>1&&r.w+r.s>0){
+    const miss={};r.ids.forEach((id,k)=>{if(r.ans[k]!==BY[id].ans){const w=BY[id].week;miss[w]=(miss[w]||0)+1;}});
+    const top=Object.keys(miss).sort((x,y)=>miss[y]-miss[x])[0];
+    stood.push(`Most misses came from Week ${top} (${WEEKS[top].t.toLowerCase()}): ${miss[top]} of them.`);
+  }
+  if(r.limit){ stood.push(r.auto?"Time ran out before you submitted.":`You finished with ${dur(Math.max(0,r.limit-r.secs))} to spare.`); }
+  const counts={all:r.n,wrong:r.w,skip:r.s,right:r.c};
+  const chip=(v,t)=>`<button class="chip" aria-pressed="${S.filter===v}" data-act="filter" data-v="${v}">${t} (${counts[v]})</button>`;
+  const cards=r.ids.map((id,k)=>{
+    const q=BY[id], a=r.ans[k], st=a===null?"skip":a===q.ans?"ok":"bad";
+    const fk={ok:"right",bad:"wrong",skip:"skip"}[st];
+    if(S.filter!=="all"&&S.filter!==fk) return "";
+    const opts=q.opts.map((o,j)=>{let cls="opt",m="";if(j===q.ans){cls+=" right";m="Correct answer";}else if(j===a){cls+=" wrong";m="Your answer";}
+      return `<div class="${cls}"><span class="ol">${L[j]}.</span><span class="od">${esc(o)}</span>${m?`<span class="om">${m}</span>`:""}</div>`;}).join("");
+    const verdict=st==="ok"?`<p class="verdict ok">Correct, 1 mark</p>`:st==="bad"?`<p class="verdict bad">Not quite, 0 marks. Correct answer: ${L[q.ans]}</p>`:`<p class="verdict skip">Skipped, 0 marks. Correct answer: ${L[q.ans]}</p>`;
+    return `<article class="panel rq"><div class="qhead"><h3 style="font-size:17px">Question ${k+1} <span class="muted" style="font-weight:500">Week ${q.week}</span></h3><span class="status ${st}">${st==="ok"?"Correct":st==="bad"?"Wrong":"Not attempted"}</span></div>
+      <p class="qtext" style="font-size:16.5px">${esc(q.text)}</p>${q.fig?figHTML():""}<div class="opts">${opts}</div>${verdict}
+      <p class="why"><b>Why:</b> ${esc(q.why)}</p><p class="ref">From Week ${q.week}: ${esc(q.ref)}</p>${noteHTML(q)}</article>`;}).join("");
+  return `<main class="wrap">
+    <section class="hero"><div class="rhero">
+      <div class="ring" role="img" aria-label="${r.pct} percent"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="12"/><circle cx="60" cy="60" r="52" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}"/></svg><b>${r.pct}%</b></div>
+      <div class="rtext"><p class="meta">${esc(r.label)}, ${dur(r.secs)}${r.limit?` of ${dur(r.limit)}`:""}${r.study?", study mode":""}</p><h1>${esc(nm(b[0]))}</h1><p>${esc(b[1])}</p>
+        <p style="margin-top:8px">You scored <b>${r.c} out of ${r.n}</b>.</p>
+        <div class="actions" style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">${missed?`<button class="btn" style="background:#fff;color:var(--accent);border:0" data-act="retry">Retry the ${missed} you missed</button>`:""}<button class="btn light" data-act="newExam">New practice</button><button class="btn light" data-act="home">Home</button></div></div>
+    </div></section>
+    <div class="tiles"><div class="tile ok"><b>${r.c}</b><span>Correct</span><em>${esc(p.tiles.ok)}</em></div><div class="tile bad"><b>${r.w}</b><span>Wrong</span><em>${esc(p.tiles.bad)}</em></div><div class="tile mid"><b>${r.s}</b><span>Not attempted</span><em>${esc(p.tiles.skip)}</em></div><div class="tile"><b>${dur(r.secs)}</b><span>Time taken</span><em>${esc(p.tiles.time)}</em></div></div>
+    ${stood.length?`<section class="panel stood"><h2 class="sec-title" style="margin:0">What stood out</h2><ul>${stood.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></section>`:""}
+    <div class="rev-head"><div><h2 class="sec-title" style="margin:0">Review your answers</h2><span class="bit">${esc(once("review",()=>pick(p.review)))}</span></div><div class="chips">${chip("all","All")}${chip("wrong","Wrong")}${chip("skip","Not attempted")}${chip("right","Correct")}</div></div>
+    ${cards||`<div class="panel empty">Nothing in this filter.</div>`}
+  </main>`;
+}
+
+function render(){
+  document.documentElement.style.setProperty("--accent",VOICE.accent);
+  const v={pick:vPick,home:vHome,setup:vSetup,exam:vExam,result:vResult}[S.screen]();
+  $app.innerHTML=vHeader()+v+(S.screen!=="exam"?`<footer class="foot"><figure class="hodnote"><blockquote>Keep learning, keep growing. Your IT family is with you every step of the way 💙</blockquote><figcaption><b>Head of the Department</b><span>Department of Information Technology, FXEC</span></figcaption></figure><p class="small">${esc(VOICE.footQuips[Math.floor(Date.now()/864e5)%VOICE.footQuips.length])}<br>Questions from the NPTEL assignments, July to October 2026.</p></footer>`:"")+(S.confirm&&S.exam?vConfirm():"");
+}
+
+/* ---------- exam engine ---------- */
+function startExam(ids,label,study,single){
+  stopTimer();
+  const n=ids.length;
+  S.exam={ids,label,study,single:single||null,ans:Array(n).fill(null),marked:Array(n).fill(false),quip:Array(n).fill(""),tip:Array(n).fill(""),idx:0,start:Date.now(),limit:study?0:n*60};
+  S.confirm=false;
+  if(!study) S.timer=setInterval(tick,1000);
+  go("exam");
+}
+function stopTimer(){if(S.timer){clearInterval(S.timer);S.timer=null;}}
+function tick(){
+  const ex=S.exam;if(!ex||!ex.limit)return;
+  const left=Math.max(0,ex.limit-Math.floor((Date.now()-ex.start)/1000));
+  const el=document.getElementById("tleft");
+  if(el){el.textContent=mmss(left);el.parentElement.classList.toggle("low",left<=60);}
+  const tm=document.getElementById("tmsg");if(tm&&left<=60&&!tm.textContent)tm.textContent=ex.tmsg||(ex.tmsg=pick(me().timer));
+  if(left<=0) finish(true);
+}
+function choose(k){
+  const ex=S.exam,i=ex.idx;
+  if(k>=BY[ex.ids[i]].opts.length) return;
+  if(ex.study&&ex.ans[i]!==null) return;
+  ex.ans[i]=k;
+  if(ex.study) ex.quip[i]=deck(k===BY[ex.ids[i]].ans?"right":"wrong");
+  render();
+}
+function finish(auto){
+  const ex=S.exam;if(!ex)return;stopTimer();
+  let secs=Math.round((Date.now()-ex.start)/1000);if(ex.limit)secs=Math.min(secs,ex.limit);
+  let c=0,w=0,s=0;ex.ids.forEach((id,k)=>{const a=ex.ans[k];if(a===null)s++;else if(a===BY[id].ans)c++;else w++;});
+  const n=ex.ids.length,pct=Math.round(100*c/n);
+  const r={label:ex.label,ids:ex.ids,ans:ex.ans,c,w,s,n,pct,secs,limit:ex.limit,study:ex.study,auto:!!auto,date:Date.now(),weeks:[...new Set(ex.ids.map(id=>BY[id].week))]};
+  const d=load(S.person);d.last=r;
+  d.attempts.unshift({date:r.date,label:r.label,c,w,s,n,pct,secs});d.attempts=d.attempts.slice(0,40);
+  if(ex.single!=null) d.best[ex.single]=Math.max(d.best[ex.single]??0,pct);
+  save(S.person,d);
+  S.result=r;S.exam=null;S.confirm=false;S.filter="all";go("result");
+  if(pct>=80&&r.c>0) confetti();
+}
+
+/* ---------- actions ---------- */
+const A={
+  install:async()=>{if(!installEvt)return;installEvt.prompt();try{await installEvt.userChoice;}catch(e){}installEvt=null;render();},
+  hideInstall:()=>{S.hideInstall=true;render();},
+  theme:()=>{const n=isDark()?"light":"dark";document.documentElement.dataset.theme=n;try{localStorage.setItem("iiot-dept-theme",n);}catch(e){}render();},
+  begin:()=>{const v=(document.getElementById("nameIn")||{}).value||"";userName=v.trim().slice(0,24);try{localStorage.setItem("iiot-dept-name",userName);localStorage.setItem("iiot-dept-started","1");}catch(e){}S.person="learner";go("home");},
+  skipName:()=>{userName="";try{localStorage.setItem("iiot-dept-name","");localStorage.setItem("iiot-dept-started","1");}catch(e){}S.person="learner";go("home");},
+  rename:()=>go("pick"),
+  home:()=>go("home"),
+  toSetup:()=>go("setup"),
+  nextLine:()=>{S.c.line=deck("mix");render();},
+  seeResult:()=>{S.result=load(S.person).last;S.filter="all";go("result");},
+  clearHist:()=>{if(!S.clearArm){S.clearArm=true;render();return;}save(S.person,{attempts:[],best:{},last:null});S.clearArm=false;render();},
+  quickWeek:d=>{S.setup.type="week";S.setup.weeks=[+d.w];go("setup");},
+  type:d=>{S.setup.type=d.v;if(d.v==="week")S.setup.weeks=[S.setup.weeks[0]||1];render();},
+  week:d=>{const w=+d.w,st=S.setup;if(st.type==="week")st.weeks=[w];else st.weeks=st.weeks.includes(w)?st.weeks.filter(x=>x!==w):[...st.weeks,w];render();},
+  count:d=>{S.setup.count=+d.v;render();},
+  mode:d=>{S.setup.study=d.v==="study";render();},
+  start:()=>{const st=S.setup,info=setupInfo();if(!info.ok)return;
+    const label=st.type==="week"?`Week ${st.weeks[0]}`:st.type==="mixed"?`Mixed: Weeks ${st.weeks.slice().sort((a,b)=>a-b).join(", ")}`:`Random ${info.count}`;
+    startExam(selectionIds(),label,st.study,st.type==="week"?st.weeks[0]:null);},
+  opt:d=>choose(+d.i),
+  nav:d=>{S.exam.idx=+d.i;render();},
+  prev:()=>{if(S.exam.idx>0){S.exam.idx--;render();}},
+  next:()=>{const ex=S.exam;if(ex.idx<ex.ids.length-1){ex.idx++;render();}else{S.confirm=true;render();}},
+  mark:()=>{const ex=S.exam;ex.marked[ex.idx]=!ex.marked[ex.idx];render();},
+  clear:()=>{const ex=S.exam;ex.ans[ex.idx]=null;render();},
+  submit:()=>{S.confirm=true;render();},
+  keep:()=>{S.confirm=false;render();},
+  confirmSubmit:()=>finish(false),
+  retry:()=>{const r=S.result;const ids=r.ids.filter((id,k)=>r.ans[k]!==BY[id].ans);startExam(shuffle(ids),`Retry: ${ids.length} missed`,r.study,null);},
+  newExam:()=>go("setup"),
+  filter:d=>{S.filter=d.v;render();}
+};
+document.addEventListener("click",e=>{const t=e.target.closest("[data-act]");if(!t||t.disabled)return;const f=A[t.dataset.act];if(f){e.preventDefault();f(t.dataset);}});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Enter"&&e.target&&e.target.id==="nameIn"){A.begin();return;}
+  if(S.screen!=="exam"||!S.exam||e.ctrlKey||e.metaKey||e.altKey)return;
+  if(S.confirm){if(e.key==="Escape")A.keep();return;}
+  const k=e.key.toLowerCase();
+  if("abcd".includes(k)&&k.length===1){choose("abcd".indexOf(k));}
+  else if(e.key==="ArrowRight"){if(S.exam.idx<S.exam.ids.length-1){S.exam.idx++;render();}}
+  else if(e.key==="ArrowLeft"){A.prev();}
+  else if(k==="m"&&!S.exam.study){A.mark();}
+});
+
+/* ---------- confetti ---------- */
+function confetti(){
+  if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  const cv=document.createElement("canvas");cv.style.cssText="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60";
+  document.body.appendChild(cv);const ctx=cv.getContext("2d");const W=cv.width=innerWidth,H=cv.height=innerHeight;
+  const cols=[VOICE.accent,"#f2b134","#ffffff","#5bc0a8","#b9a6f0"];
+  const ps=Array.from({length:150},()=>({x:W/2+(Math.random()-.5)*W*.3,y:H*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*14-4,r:Math.random()*6+4,c:pick(cols),a:Math.random()*6,va:(Math.random()-.5)*.3,heart:Math.random()<.25}));
+  let t=0;(function f(){ctx.clearRect(0,0,W,H);ps.forEach(p=>{p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.vx*=.99;p.a+=p.va;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.a);ctx.fillStyle=p.c;
+    if(p.heart){ctx.font=`${p.r*3}px serif`;ctx.fillText("★",0,0);}else ctx.fillRect(-p.r/2,-p.r/4,p.r,p.r/2);ctx.restore();});
+    if(++t<150)requestAnimationFrame(f);else cv.remove();})();
+}
+
+if(S.person) S.screen="home";
+render();
+</script></body></html>
